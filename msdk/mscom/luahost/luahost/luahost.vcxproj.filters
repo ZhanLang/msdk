@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{263ddc8c-05cb-42e9-8f9a-bfb897044048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="luaex">
+      <UniqueIdentifier>{e8324649-1e17-4964-84d8-d298d17a5685}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\msdk\include\luahost\ILuaHost.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="luahost.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaVM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinRegKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinFileSystems.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinQuickLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinIni.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OsInof.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseCommandToLua.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StringConvert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="prodinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vercmp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaBase64.h">
+      <Filter>luaex</Filter>
+    </ClInclude>
+    <ClInclude Include="BindHttp.h">
+      <Filter>luaex</Filter>
+    </ClInclude>
+    <ClInclude Include="Rc4LuaEx.h">
+      <Filter>luaex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\msdk\include\luahost\LuaHostPluginImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="luafunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="logtool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="l_msapp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="l_mstime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="l_reg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceOpt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaBindDuilib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinGloble.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="leant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="l_AppDownload.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDefine_l.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="luahost.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaVM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinRegKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinFileSystems.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinQuickLink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinIni.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseCommandToLua.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StringConvert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OsInof.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="logtool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceOpt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="luahost.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

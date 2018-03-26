@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>msgbus</ProjectName>
+    <ProjectGuid>{E7244E4B-E2A9-4951-BD0F-4F84FA51442C}</ProjectGuid>
+    <RootNamespace>MSCCOM</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v100</PlatformToolset>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\bin\common file\mscom\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\common file\mscom\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk/include;$(code_dir)\msdk/include/msc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MSCCOM_EXPORTS;USE_MARGINCOM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <ModuleDefinitionFile>$(CODE_DIR)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk/include;$(code_dir)\msdk/include/msc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MSCCOM_EXPORTS;USE_MARGINCOM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>$(CODE_DIR)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CMSCMessageQueue.cpp" />
+    <ClCompile Include="Confusion.cpp" />
+    <ClCompile Include="CPipe.cpp" />
+    <ClCompile Include="CXCredit.cpp" />
+    <ClCompile Include="CXMessage.cpp" />
+    <ClCompile Include="CXMSCDispatcher.cpp" />
+    <ClCompile Include="CXMSCProxy.cpp" />
+    <ClCompile Include="CXMSCProxyImpl.cpp" />
+    <ClCompile Include="CXMSCProxyThread.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="MSC.cpp" />
+    <ClCompile Include="MSCHandler.cpp" />
+    <ClCompile Include="MSCListener.cpp" />
+    <ClCompile Include="MSCManager.cpp" />
+    <ClCompile Include="MsMsc.cpp" />
+    <ClCompile Include="MsXMSCProxy.cpp" />
+    <ClCompile Include="Profile.cpp" />
+    <ClCompile Include="RSA.cpp" />
+    <ClCompile Include="SHA_1.cpp" />
+    <ClCompile Include="SMSCMessageMap.cpp" />
+    <ClCompile Include="SMSCSubscriberList.cpp" />
+    <ClCompile Include="SMSCSubscriberQueue.cpp" />
+    <ClCompile Include="SPipe.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Subscriber.cpp" />
+    <ClCompile Include="XBuffer.cpp" />
+    <ClCompile Include="XMessageBuffer.cpp" />
+    <ClCompile Include="XMutex.cpp" />
+    <ClCompile Include="XSynchronization.cpp" />
+    <ClCompile Include="XThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMSCMessageQueue.h" />
+    <ClInclude Include="Confusion.h" />
+    <ClInclude Include="CPipe.h" />
+    <ClInclude Include="CXCredit.h" />
+    <ClInclude Include="CXMessage.h" />
+    <ClInclude Include="CXMSCDispatcher.h" />
+    <ClInclude Include="CXMSCProxy.h" />
+    <ClInclude Include="CXMSCProxyImpl.h" />
+    <ClInclude Include="CXMSCProxyThread.h" />
+    <ClInclude Include="MSC.h" />
+    <ClInclude Include="MSCHandler.h" />
+    <ClInclude Include="MSCListener.h" />
+    <ClInclude Include="MSCManager.h" />
+    <ClInclude Include="MsMsc.h" />
+    <ClInclude Include="MsXMSCProxy.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RSA.h" />
+    <ClInclude Include="SHA_1.h" />
+    <ClInclude Include="SMSCMessageMap.h" />
+    <ClInclude Include="SMSCSubscriberList.h" />
+    <ClInclude Include="SMSCSubscriberQueue.h" />
+    <ClInclude Include="SPipe.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Subscriber.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="XBuffer.h" />
+    <ClInclude Include="XCredit.h" />
+    <ClInclude Include="XMessageBuffer.h" />
+    <ClInclude Include="XMMSC.h" />
+    <ClInclude Include="XMutex.h" />
+    <ClInclude Include="XSynchronization.h" />
+    <ClInclude Include="XThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MSC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

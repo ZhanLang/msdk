@@ -1,0 +1,1 @@
+gcc 001.cpp -o 001.exe -lstdc++ -lgdiplus -lgdi32 -lole32 -lmsimg32

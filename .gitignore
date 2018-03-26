@@ -1,0 +1,12 @@
+/msdk/mscom/cscomm/common.suo
+/msdk/mscom/comebase/Debug/*.tlog
+/msdk/mscom/comebase/*.user
+/msdk/mscom/curl/lib/*.user
+/msdk/mscom/curl/lib/CMakeFiles/*.stamp
+/msdk/mscom/curl/lib/CMakeFiles/*.depend
+/msdk/mscom/curl/lib/*.cmake
+/msdk/mscom/curl/*.user
+/msdk/mscom/curl/tests/libtest/*.user
+/msdk/mscom/curl/tests/unit/*.user
+Debug
+Release

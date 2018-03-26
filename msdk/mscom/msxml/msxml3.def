@@ -1,0 +1,9 @@
+LIBRARY	rsxml3
+
+EXPORTS
+	GetDLLObject
+
+	DllCanUnloadNow     = MSDllCanUnloadNow		PRIVATE
+	DllGetClassObject   = MSDllGetClassObject	PRIVATE
+	DllRegisterServer   = MSDllRegisterServer	PRIVATE
+	DllUnregisterServer = MSDllUnregisterServer	PRIVATE

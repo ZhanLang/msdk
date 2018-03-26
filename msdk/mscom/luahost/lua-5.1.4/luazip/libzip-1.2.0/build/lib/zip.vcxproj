@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1A1A0547-8D6F-3709-82CD-F73E7F13FE39}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>zip</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zip.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zip</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zip.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zip</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">zip.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">zip.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\..\lib</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\..\lib</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\;..\..\zlib-1.2.11\;..\..\zlib-1.2.11\build;..\..\lib\gladman-fcrypt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";zip_EXPORTS;ZIP_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;G:\svn\maguojun\win\soui2\bin\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+      <OutputFile>$(OutDir)$(TargetName)_d$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)_d$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\;..\..\zlib-1.2.11\;..\..\zlib-1.2.11\build;..\..\lib\gladman-fcrypt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="Release";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;G:\svn\maguojun\win\soui2\bin\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;G:\svn\maguojun\win\soui2\bin\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/lib/MinSizeRel/zip.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/lib/MinSizeRel/zip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\gladman-fcrypt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;G:\svn\maguojun\win\soui2\bin\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/lib/RelWithDebInfo/zip.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/lib/RelWithDebInfo/zip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\lib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\lib\CMakeFiles\generate.stamp</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib\gladman-fcrypt.c" />
+    <ClCompile Include="..\..\lib\zip_add.c" />
+    <ClCompile Include="..\..\lib\zip_add_dir.c" />
+    <ClCompile Include="..\..\lib\zip_add_entry.c" />
+    <ClCompile Include="..\..\lib\zip_buffer.c" />
+    <ClCompile Include="..\..\lib\zip_close.c" />
+    <ClCompile Include="..\..\lib\zip_delete.c" />
+    <ClCompile Include="..\..\lib\zip_dir_add.c" />
+    <ClCompile Include="..\..\lib\zip_dirent.c" />
+    <ClCompile Include="..\..\lib\zip_discard.c" />
+    <ClCompile Include="..\..\lib\zip_entry.c" />
+    <ClCompile Include="..\..\lib\zip_err_str.c" />
+    <ClCompile Include="..\..\lib\zip_error.c" />
+    <ClCompile Include="..\..\lib\zip_error_clear.c" />
+    <ClCompile Include="..\..\lib\zip_error_get.c" />
+    <ClCompile Include="..\..\lib\zip_error_get_sys_type.c" />
+    <ClCompile Include="..\..\lib\zip_error_strerror.c" />
+    <ClCompile Include="..\..\lib\zip_error_to_str.c" />
+    <ClCompile Include="..\..\lib\zip_extra_field.c" />
+    <ClCompile Include="..\..\lib\zip_extra_field_api.c" />
+    <ClCompile Include="..\..\lib\zip_fclose.c" />
+    <ClCompile Include="..\..\lib\zip_fdopen.c" />
+    <ClCompile Include="..\..\lib\zip_file_add.c" />
+    <ClCompile Include="..\..\lib\zip_file_error_clear.c" />
+    <ClCompile Include="..\..\lib\zip_file_error_get.c" />
+    <ClCompile Include="..\..\lib\zip_file_get_comment.c" />
+    <ClCompile Include="..\..\lib\zip_file_get_external_attributes.c" />
+    <ClCompile Include="..\..\lib\zip_file_get_offset.c" />
+    <ClCompile Include="..\..\lib\zip_file_rename.c" />
+    <ClCompile Include="..\..\lib\zip_file_replace.c" />
+    <ClCompile Include="..\..\lib\zip_file_set_comment.c" />
+    <ClCompile Include="..\..\lib\zip_file_set_encryption.c" />
+    <ClCompile Include="..\..\lib\zip_file_set_external_attributes.c" />
+    <ClCompile Include="..\..\lib\zip_file_set_mtime.c" />
+    <ClCompile Include="..\..\lib\zip_file_strerror.c" />
+    <ClCompile Include="..\..\lib\zip_filerange_crc.c" />
+    <ClCompile Include="..\..\lib\zip_fopen.c" />
+    <ClCompile Include="..\..\lib\zip_fopen_encrypted.c" />
+    <ClCompile Include="..\..\lib\zip_fopen_index.c" />
+    <ClCompile Include="..\..\lib\zip_fopen_index_encrypted.c" />
+    <ClCompile Include="..\..\lib\zip_fread.c" />
+    <ClCompile Include="..\..\lib\zip_fseek.c" />
+    <ClCompile Include="..\..\lib\zip_get_archive_comment.c" />
+    <ClCompile Include="..\..\lib\zip_get_archive_flag.c" />
+    <ClCompile Include="..\..\lib\zip_get_compression_implementation.c" />
+    <ClCompile Include="..\..\lib\zip_get_encryption_implementation.c" />
+    <ClCompile Include="..\..\lib\zip_get_file_comment.c" />
+    <ClCompile Include="..\..\lib\zip_get_name.c" />
+    <ClCompile Include="..\..\lib\zip_get_num_entries.c" />
+    <ClCompile Include="..\..\lib\zip_get_num_files.c" />
+    <ClCompile Include="..\..\lib\zip_hash.c" />
+    <ClCompile Include="..\..\lib\zip_io_util.c" />
+    <ClCompile Include="..\..\lib\zip_memdup.c" />
+    <ClCompile Include="..\..\lib\zip_name_locate.c" />
+    <ClCompile Include="..\..\lib\zip_new.c" />
+    <ClCompile Include="..\..\lib\zip_open.c" />
+    <ClCompile Include="..\..\lib\zip_rename.c" />
+    <ClCompile Include="..\..\lib\zip_replace.c" />
+    <ClCompile Include="..\..\lib\zip_set_archive_comment.c" />
+    <ClCompile Include="..\..\lib\zip_set_archive_flag.c" />
+    <ClCompile Include="..\..\lib\zip_set_default_password.c" />
+    <ClCompile Include="..\..\lib\zip_set_file_comment.c" />
+    <ClCompile Include="..\..\lib\zip_set_file_compression.c" />
+    <ClCompile Include="..\..\lib\zip_set_name.c" />
+    <ClCompile Include="..\..\lib\zip_source_begin_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_buffer.c" />
+    <ClCompile Include="..\..\lib\zip_source_call.c" />
+    <ClCompile Include="..\..\lib\zip_source_close.c" />
+    <ClCompile Include="..\..\lib\zip_source_commit_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_crc.c" />
+    <ClCompile Include="..\..\lib\zip_source_deflate.c" />
+    <ClCompile Include="..\..\lib\zip_source_error.c" />
+    <ClCompile Include="..\..\lib\zip_source_filep.c" />
+    <ClCompile Include="..\..\lib\zip_source_free.c" />
+    <ClCompile Include="..\..\lib\zip_source_function.c" />
+    <ClCompile Include="..\..\lib\zip_source_is_deleted.c" />
+    <ClCompile Include="..\..\lib\zip_source_layered.c" />
+    <ClCompile Include="..\..\lib\zip_source_open.c" />
+    <ClCompile Include="..\..\lib\zip_source_pkware.c" />
+    <ClCompile Include="..\..\lib\zip_source_read.c" />
+    <ClCompile Include="..\..\lib\zip_source_remove.c" />
+    <ClCompile Include="..\..\lib\zip_source_rollback_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_seek.c" />
+    <ClCompile Include="..\..\lib\zip_source_seek_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_stat.c" />
+    <ClCompile Include="..\..\lib\zip_source_supports.c" />
+    <ClCompile Include="..\..\lib\zip_source_tell.c" />
+    <ClCompile Include="..\..\lib\zip_source_tell_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_window.c" />
+    <ClCompile Include="..\..\lib\zip_source_winzip_aes_decode.c" />
+    <ClCompile Include="..\..\lib\zip_source_winzip_aes_encode.c" />
+    <ClCompile Include="..\..\lib\zip_source_write.c" />
+    <ClCompile Include="..\..\lib\zip_source_zip.c" />
+    <ClCompile Include="..\..\lib\zip_source_zip_new.c" />
+    <ClCompile Include="..\..\lib\zip_stat.c" />
+    <ClCompile Include="..\..\lib\zip_stat_index.c" />
+    <ClCompile Include="..\..\lib\zip_stat_init.c" />
+    <ClCompile Include="..\..\lib\zip_strerror.c" />
+    <ClCompile Include="..\..\lib\zip_string.c" />
+    <ClCompile Include="..\..\lib\zip_unchange.c" />
+    <ClCompile Include="..\..\lib\zip_unchange_all.c" />
+    <ClCompile Include="..\..\lib\zip_unchange_archive.c" />
+    <ClCompile Include="..\..\lib\zip_unchange_data.c" />
+    <ClCompile Include="..\..\lib\zip_utf-8.c" />
+    <ClCompile Include="..\..\lib\mkstemp.c" />
+    <ClCompile Include="..\..\lib\zip_random_win32.c" />
+    <ClCompile Include="..\..\lib\zip_source_win32a.c" />
+    <ClCompile Include="..\..\lib\zip_source_win32handle.c" />
+    <ClCompile Include="..\..\lib\zip_source_win32utf8.c" />
+    <ClCompile Include="..\..\lib\zip_source_win32w.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/ZERO_CHECK.vcxproj">
+      <Project>B040ECA8-2191-3BF0-9F44-169B1380B28D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

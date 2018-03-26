@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiCore", "code\DuiCore\DuiCore.vcxproj", "{1AC5820C-303A-4C02-9940-0AB9931C3814}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiTest", "code\DuiTest\DuiTest.vcxproj", "{1D6766B1-038B-40D8-8797-DC2C4FE92D94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC5820C-303A-4C02-9940-0AB9931C3814}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AC5820C-303A-4C02-9940-0AB9931C3814}.Debug|Win32.Build.0 = Debug|Win32
+		{1AC5820C-303A-4C02-9940-0AB9931C3814}.Release|Win32.ActiveCfg = Release|Win32
+		{1AC5820C-303A-4C02-9940-0AB9931C3814}.Release|Win32.Build.0 = Release|Win32
+		{1D6766B1-038B-40D8-8797-DC2C4FE92D94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D6766B1-038B-40D8-8797-DC2C4FE92D94}.Debug|Win32.Build.0 = Debug|Win32
+		{1D6766B1-038B-40D8-8797-DC2C4FE92D94}.Release|Win32.ActiveCfg = Release|Win32
+		{1D6766B1-038B-40D8-8797-DC2C4FE92D94}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

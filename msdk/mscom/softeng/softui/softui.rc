@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 414, 231
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "软件扫描引擎"
+FONT 12, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "未安装",IDC_CHECK_ALLDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,3,34,10
+    CONTROL         "官方库",IDC_CHECK_DEFDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,3,34,10
+    CONTROL         "用户库",IDC_CHECK_USERDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,99,3,34,10
+    CONTROL         "系统软件列表",IDC_CHECK_ENUMDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,3,57,10
+    CONTROL         "属性条件",IDC_CHECK_ATTRIBUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,14,41,10
+    EDITTEXT        IDC_EDIT_CONDITION,7,13,68,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "清理(&C)",IDC_BUTTON_CLEAN,366,3,33,21
+    CONTROL         "",IDC_LIST_SOFT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,27,400,199
+    LTEXT           "左键双击编辑库规则\r\n右键双击看扫描结果",IDC_STATIC_1,292,3,72,21
+    CONTROL         "隐藏白名单",IDC_CHECK_HIDEWHITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,4,57,10
+    DEFPUSHBUTTON   "扫描(&S)",IDC_BUTTON_SCAN,254,3,33,21
+    EDITTEXT        IDC_EDIT_SYS,178,14,68,12,ES_AUTOHSCROLL
+    LTEXT           "系统盘符：",IDC_STATIC,138,15,41,8
+END
+
+IDD_EDIT DIALOGEX 0, 0, 306, 196
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "软件规则编辑"
+FONT 12, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_EDIT_SOFTID,35,15,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_LIST_SOFTEDIT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,43,183,146
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,193,45,33,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,229,45,33,14
+    PUSHBUTTON      "修改",IDC_BUTTON_MOD,265,45,33,14
+    EDITTEXT        IDC_EDIT1,193,70,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,193,98,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,193,126,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,193,155,106,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TAB_VIEW,"SysTabControl32",0x0,7,32,154,12
+    LTEXT           "1",IDC_STATIC1,193,60,106,8
+    LTEXT           "2",IDC_STATIC2,193,88,106,8
+    LTEXT           "3",IDC_STATIC3,193,116,106,8
+    LTEXT           "4",IDC_STATIC4,193,145,106,8
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,249,175,50,14
+    LTEXT           "软件ID",IDC_STATIC,7,18,25,8
+    LTEXT           "当前库已有最大软件ID(官方库:%d 用户库:%d)",IDC_STATIC_MAXSOFTID,7,4,227,8
+    PUSHBUTTON      "删除软件",IDC_BUTTON_DELSOFT,86,15,41,14
+    LTEXT           "可新加软件，请先添加扫描规则并保存",IDC_STATIC_,87,18,137,8
+END
+
+IDD_EDIT_EDIT DIALOGEX 0, 0, 225, 102
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "编辑数据"
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,149,81,34,14
+    EDITTEXT        IDC_EDIT_EDIT,7,7,211,67,ES_MULTILINE
+    PUSHBUTTON      "取消",IDCANCEL,184,81,34,14
+END
+
+IDD_SOFTINFO DIALOGEX 0, 0, 250, 197
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "软件信息"
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_SOFTID,23,7,46,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PATH,70,7,173,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SOFTFILE,7,34,236,69,ES_MULTILINE | ES_READONLY
+    EDITTEXT        IDC_EDIT_SOFTPATH,7,119,236,71,ES_MULTILINE | ES_READONLY
+    LTEXT           "软件",IDC_STATIC,7,9,16,8
+    LTEXT           "文件信息",IDC_STATIC_FILEINFO,7,24,31,8
+    LTEXT           "路径信息",IDC_STATIC_PATHINFO,7,108,31,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_EDIT_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_SOFTINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\softui.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "softui Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "softui"
+            VALUE "LegalCopyright", "Copyright 2012"
+            VALUE "OriginalFilename", "softui.exe"
+            VALUE "ProductName", "softui Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

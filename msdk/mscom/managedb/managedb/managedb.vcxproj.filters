@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ado">
+      <UniqueIdentifier>{9b667e7d-6d75-4009-8720-17672fccc24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\msg">
+      <UniqueIdentifier>{8ee2dc06-e5f9-453f-81a1-3ec80eea8717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\otl">
+      <UniqueIdentifier>{b3e62822-1da3-4b80-8558-f5ac537092f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\biz">
+      <UniqueIdentifier>{1b7d6ede-9d96-48bf-9d71-74936b9a5145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{1afd0fc0-e0bb-4bc6-b6a6-294d3ab168d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ado">
+      <UniqueIdentifier>{4dd4d25b-e1ab-4ce2-85a0-30b6568abaa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sqlite">
+      <UniqueIdentifier>{41d8cdac-b616-4623-9134-9c92bb8e54de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\msg">
+      <UniqueIdentifier>{609b26e5-fe20-48ca-b1c6-f4be5a80b6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\otl">
+      <UniqueIdentifier>{1fcf029f-2105-4b7e-bec8-15d7ad41950e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{1a5e1cfb-86dc-4395-86bd-56baa16d25cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="managedb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqliteconn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ado\msado15.tlh">
+      <Filter>Source Files\ado</Filter>
+    </None>
+    <None Include="ado\msado15.tli">
+      <Filter>Source Files\ado</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ado\adoconn.h">
+      <Filter>Source Files\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="ado\adorecordset.h">
+      <Filter>Source Files\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="ado\adostmt.h">
+      <Filter>Source Files\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="ado\varcast.h">
+      <Filter>Source Files\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqliteconn.h">
+      <Filter>Header Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqlitedb.h">
+      <Filter>Header Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqliterst.h">
+      <Filter>Header Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\guid_hashtable.h">
+      <Filter>Header Files\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\hash_table.h">
+      <Filter>Header Files\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\net_msg_manager.h">
+      <Filter>Header Files\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="connpool.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\database\genericdb.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="objpool.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyset.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rscom\prophelpers.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\database\rsconninfo.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="virtualconn.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="managedb.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

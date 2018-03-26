@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Syslay", "syslay.vcproj", "{73364742-2C0D-408A-9C51-0B83AF08A3ED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "syslays", "..\syslays\syslays.vcproj", "{3974C6C1-459E-4817-8FCA-ED869853099F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Unicode|Win32 = Debug Unicode|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Debug Unicode|Win32.ActiveCfg = Debug Unicode|Win32
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Debug Unicode|Win32.Build.0 = Debug Unicode|Win32
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Debug|Win32.Build.0 = Debug|Win32
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Release|Win32.ActiveCfg = Release|Win32
+		{73364742-2C0D-408A-9C51-0B83AF08A3ED}.Release|Win32.Build.0 = Release|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Debug Unicode|Win32.ActiveCfg = Debug|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Debug Unicode|Win32.Build.0 = Debug|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Debug|Win32.Build.0 = Debug|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Release|Win32.ActiveCfg = Release|Win32
+		{3974C6C1-459E-4817-8FCA-ED869853099F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

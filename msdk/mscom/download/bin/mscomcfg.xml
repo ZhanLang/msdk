@@ -1,0 +1,113 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<mscomcfg>
+
+ <!--begin mscom-->
+	<moudle guid='{9E5F158A-1199-4675-9BCF-E3C2670E7992}'  X86='.\Common File\mscom\msxml3w.dll'>
+		<class clsid='{35FD921E-B758-46d8-B0AA-FCD033B0E66D}'  progid='IXMLTreeW'  name='CLSID_IXMLTreeW'/>
+	</moudle>
+
+	<moudle guid='{C3E0286F-4DC4-4aa4-86B4-422FDECF9045}'  X86='.\Common File\mscom\msgbus.dll'>
+		<class clsid='{7E26320D-2526-4adf-804F-38A5FC9F326D}'  progid='MSMSC.1'  name='CLSID_MsgBus'/>
+		<class clsid='{1F289203-C14D-44c6-8ABB-0CE576B7B752}'  progid='CLSID_MsgBusProxy.1'  name='CLSID_MsgBusProxy'/>
+	</moudle>
+	<moudle guid='{B10A7722-01C3-4af2-8E1A-0A050DF2B874}'  X86='.\Common File\mscom\npc32.dll' X64='.\Common File\mscom\npc64.dll'>
+		<class clsid='{A6B5E99A-6784-457e-A2F9-3E082BD76A64}'  progid='CComX3.1'  name='CLSID_CComX3'/>
+	</moudle>
+
+	<moudle guid='{B50E1612-AC97-4b4d-9DB9-894F89DE0203}'  X86='.\Common File\mscom\comebase.dll'>
+		<!-- buffer-->
+		<class clsid='{98FB74FA-6BE0-401b-B986-A78A80EED7A1}'  progid='MsBufferMgr.1'  name='CLSID_MsBufferMgr'/>
+		<class clsid='{B021C8D6-7D21-4F41-99ED-259DD3DB996B}'  progid='MsBufferImp.1'  name='CLSID_MsBuffer_Safe'/>
+
+		<!-- Property-->
+		<class clsid='{ED20E0E5-2357-4825-B3FA-198AEC674E81}'  progid='Property.1'  name='CLSID_CProperty'/>
+		<class clsid='{AD4F3A47-0CD6-43de-BC22-E8BE24FFD424}'  progid='PropertyThread.1'  name='CLSID_CProperty_thread'/>
+		<class clsid='{2100E98D-B13E-4306-8081-50F325B10586}'  progid='Property2.1'  name='CLSID_CProperty2'/>
+		<class clsid='{0AEF80FB-9BAF-4e66-96B3-784ED0FCECF1}'  progid='Property2Thread.1'  name='CLSID_CProperty2_thread'/>
+
+		<!--string-->
+		<class clsid='{34A5F0CC-E038-4C0E-AE02-6291C34248FA}'  progid='MStringA.1'  name='CLSID_StringA'/>
+		<class clsid='{78B6343D-6D65-4F09-9AE4-2958E057B5FB}'  progid='MStringW.1'  name='CLSID_StringW'/>
+		<class clsid='{FA208B82-7587-4dfc-BB3D-8CF85278F366}'  progid='MStringA_Safe.1'  name='CLSID_StringA_Safe'/>
+		<class clsid='{9EC1DD66-5C82-4b66-B23A-0596983F9684}'  progid='MStringW_Safe.1'  name='CLSID_StringW_Safe'/>
+		<class clsid='{860FAAF4-3E28-46d3-8EF6-DCD021FDCA53}'  progid='MStringMgr.1'  name='CLSID_StringMgr'/>
+		<!--heap-->
+		<class clsid='{2E0B4570-415B-4f47-96B7-85700C113ED7}'  progid='CLSID_HeapMem.1'  name='CLSID_HeapMem'/>
+
+		<!--queue-->
+		<class clsid='{C67133C5-EB7D-4CB1-B584-01B0D7F8B205}'  progid='CLSID_ObjeceQueue.1'  name='CLSID_ObjeceQueue'/>
+		
+		<!--vector-->
+		<class clsid='{24DC5D6E-5713-4AD7-BF84-664ADA71FD58}'  progid='CLSID_MsDwordVector.1'  name='CLSID_MsDwordVector'/>
+		<class clsid='{827A98B8-EE4B-4D28-A49C-5F002090E0C5}'  progid='CLSID_MsSafeDwordVector.1'  name='CLSID_MsSafeDwordVector'/>
+	</moudle>
+
+	<!--traywnd-->
+	<moudle guid='{56A6E50E-A3EC-48f4-8500-72A072592664}'  X86='.\common file\mscom\traywnd.dll'>
+		<class clsid='{4FCE6281-8849-4fc6-A764-95C793EB8A48}'  progid='ClSID_CTraySrv.1'  name='ClSID_CTraySrv'/>
+		<class clsid='{EBC23555-424F-45c3-BECE-206819CB276B}'  progid='ClSID_CTrayWnd.1'  name='ClSID_CTrayWnd'/>
+		<class clsid='{FCA0E62A-5DD4-46fb-AFB2-BDC74EA7DB36}'  progid='ClSID_CTrayMenuBase.1'  name='ClSID_CTrayMenuBase'/>
+	</moudle>
+
+	<!--fastdb-->
+	<moudle guid='{53EE54BE-D61B-4f05-97D8-E5ED9862871B}'  X86='.\common file\mscom\FastDBDll.dll'>
+		<class clsid='{198E9227-F926-4D20-8824-DE24B6A4A855}'  progid='CLSID_ITaskDBFast.1'  name='CLSID_ITaskDBFast'/>
+	</moudle>
+
+	
+	<moudle guid='{3CBD4EBD-E88E-4929-AD9B-202E3411F16E}'  X86='.\Common File\mscom\luahost.dll'>
+		<class clsid='{2A18A449-F334-4BD2-B6BF-C02BCDC93D3C}'  progid='CLSID_LuaVM.1'  name='CLSID_LuaVM'/>
+		<class clsid='{4ED76816-8BE3-43E6-85FF-94AC1985D574}'  progid='CLSID_LuaHost'  name='CLSID_LuaHost'/>
+	</moudle>
+	
+	<!--数据库相关-->
+	<!--managedb.dll  database\genericdb.h-->
+	<moudle guid='{3CBD4EBD-E88E-4929-AD9B-202E3411F16E}'  X86='.\Common File\mscom\managedb.dll'>
+		<class clsid='{6C484F8F-B94F-4F59-A6AE-4D90805BF128}'  progid='CLSID_DbAdoConn.1'  name='CLSID_DbAdoConn'/>
+		<class clsid='{3066762A-BE38-4f9e-8CFB-2037133486B3}'  progid='DbSqliteConn.1'  name='CLSID_DbSqliteConn'/>
+	</moudle>
+	
+	<!--sqlite加密数据库-->
+	<moudle guid='{DE8E41DE-8D19-4b9e-88AF-063BAAF18090}'  X86='.\Common File\mscom\sqlitesdb.dll'>
+		<class clsid='{D9F63AD9-4A97-40e5-92FD-FA5ED7CA4252}'  progid='CLSID_DbSqliteSafeDB.1'  name='CLSID_DbSqliteSafeDB'/>
+	</moudle>
+	
+	<!--sqlite常规数据库-->
+	<moudle guid='{F148FFC0-DDB8-40b5-9F07-EC7D6AC7B369}'  X86='.\Common File\mscom\sqlitedb.dll'>
+		<class clsid='{2A7C48DA-D086-4E36-88DC-2734532FFC7E}'  progid='CLSID_DbSqliteDB.1'  name='CLSID_DbSqliteDB'/>
+	</moudle>
+	
+	
+	<!--downloadmgr.dll  download\IDownload.h-->
+	<moudle guid='{A9F7BE8D-9521-4914-A09E-51E3E7568331}'  X86='.\Common File\mscom\downloadmgr.dll'>
+		<class clsid='{D4E72BA0-6ABC-4E08-B172-AE74F418B1B3}'  progid='CLSID_HttpDownload.1'  name='CLSID_HttpDownload'/>
+		<class clsid='{A9708DBA-31AE-4DEB-9444-31B384FE2A36}'  progid='CLSID_DownloadMgr.1'  name='CLSID_DownloadMgr'/>
+		<class clsid='{FB9F9739-9BF4-4451-BFA8-1DF630016D0B}'  progid='CLSID_HttpSyncRequest.1'  name='CLSID_HttpSyncRequest'/>
+		<class clsid='{D6E387D2-EBE0-4955-A123-E088E054750E}'  progid='CLSID_HttpAsyncRequst.1'  name='CLSID_HttpAsyncRequst'/>
+		<class clsid='{38647D80-E517-46BA-8067-01C95FCAF5C3}'  progid='CLSID_Http_LuaEx.1'  name='CLSID_Http_LuaEx'/>
+	</moudle>
+	<!--end mscom-->
+
+  <!--pubcom-->
+  <moudle guid='{6062C648-6534-430e-A8DB-8DFC1C7C7506}'  X86='.\Common File\pubcom\msgcrt.dll'>
+        <class clsid='{62D8CCDE-7CA1-428c-AE51-9C92E6B39E89}'  progid='MsgCenter.1'  name='CLSID_MsgCenter'/>
+  </moudle>
+   <moudle guid='{CCA2B555-EAF0-4711-A07E-DB7AC0578F45}'  X86='.\Common File\pubcom\signalapp.dll'>
+        <class clsid='{EE002FCF-2DE9-45DF-B504-A9E233E9B4B6}'  progid='SignalApp.1'  name='CLSID_SignalApp'/>
+  </moudle>
+
+  <moudle guid='{72F26EDA-275E-4699-8F75-ECE41C297655}'  X86='.\Common File\mscom\filemonitor.dll'>
+	   <class clsid='{DA88C118-4434-4c5e-A23E-DCA3A292C1AE}'  progid='CLSID_FileMonitor.1'  name='CLSID_FileMonitor'/>
+	   <class clsid='{C05AFE0B-1CFB-461f-87B2-CBAA81FEDA37}'  progid='CLSID_FileMonitorSrv.1'  name='CLSID_FileMonitorSrv'/>
+	   <class clsid='{14F50ED6-4F0F-42e0-BA27-98D3B30E8CD4}'  progid='CLSID_DiskMonitor.1'  name='CLSID_DiskMonitor'/>
+  </moudle>
+
+ <moudle guid='{182FA4DA-9EA8-43fb-97FF-B0BFF473C235}'  X86='.\mainui.dll'>
+	  <class clsid='{376E1DA4-7DFC-4a3e-8134-2D47666DEB45}'  progid='CLSID_SearchUI.1'  name='CLSID_SearchUI'/>
+  </moudle>
+  
+  <moudle guid='{890DDBA6-96C6-4FB7-BD98-E3A2429E2163}'  X86='.\report.dll'>
+		<class clsid='{9E56D818-D145-4508-8FF8-0B4403692026}'  progid='CLSID_Report'  name='CLSID_Report'/>
+	</moudle>
+
+</mscomcfg>

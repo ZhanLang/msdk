@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6FA591F7-55E9-3948-A16D-33996A2DA351}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libcurl</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(code_dir)\msdk\bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcurl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcurl_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(code_dir)\msdk\bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcurl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcurl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcurl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcurl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcurl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcurl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR="Debug";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"Debug\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;wldap32.lib;winmm.lib;ws2_32.lib;crypt32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/Debug/libcurl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR="Release";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"Release\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;wldap32.lib;winmm.lib;ws2_32.lib;crypt32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/Release/libcurl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR="MinSizeRel";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;wldap32.lib;winmm.lib;ws2_32.lib;crypt32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/MinSizeRel/libcurl_imp.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/MinSizeRel/libcurl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR="RelWithDebInfo";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;HAVE_CONFIG_H;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..\include;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\..;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;wldap32.lib;winmm.lib;ws2_32.lib;crypt32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/RelWithDebInfo/libcurl_imp.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/RelWithDebInfo/libcurl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arpa_telnet.h" />
+    <ClInclude Include="netrc.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="timeval.h" />
+    <ClInclude Include="hostip.h" />
+    <ClInclude Include="progress.h" />
+    <ClInclude Include="formdata.h" />
+    <ClInclude Include="cookie.h" />
+    <ClInclude Include="http.h" />
+    <ClInclude Include="sendf.h" />
+    <ClInclude Include="ftp.h" />
+    <ClInclude Include="url.h" />
+    <ClInclude Include="dict.h" />
+    <ClInclude Include="if2ip.h" />
+    <ClInclude Include="speedcheck.h" />
+    <ClInclude Include="urldata.h" />
+    <ClInclude Include="curl_ldap.h" />
+    <ClInclude Include="escape.h" />
+    <ClInclude Include="telnet.h" />
+    <ClInclude Include="getinfo.h" />
+    <ClInclude Include="strcase.h" />
+    <ClInclude Include="curl_sec.h" />
+    <ClInclude Include="memdebug.h" />
+    <ClInclude Include="http_chunks.h" />
+    <ClInclude Include="curl_fnmatch.h" />
+    <ClInclude Include="wildcard.h" />
+    <ClInclude Include="fileinfo.h" />
+    <ClInclude Include="ftplistparser.h" />
+    <ClInclude Include="strtok.h" />
+    <ClInclude Include="connect.h" />
+    <ClInclude Include="llist.h" />
+    <ClInclude Include="hash.h" />
+    <ClInclude Include="content_encoding.h" />
+    <ClInclude Include="share.h" />
+    <ClInclude Include="curl_md4.h" />
+    <ClInclude Include="curl_md5.h" />
+    <ClInclude Include="http_digest.h" />
+    <ClInclude Include="http_negotiate.h" />
+    <ClInclude Include="inet_pton.h" />
+    <ClInclude Include="amigaos.h" />
+    <ClInclude Include="strtoofft.h" />
+    <ClInclude Include="strerror.h" />
+    <ClInclude Include="inet_ntop.h" />
+    <ClInclude Include="curlx.h" />
+    <ClInclude Include="curl_memory.h" />
+    <ClInclude Include="curl_setup.h" />
+    <ClInclude Include="transfer.h" />
+    <ClInclude Include="select.h" />
+    <ClInclude Include="easyif.h" />
+    <ClInclude Include="multiif.h" />
+    <ClInclude Include="parsedate.h" />
+    <ClInclude Include="tftp.h" />
+    <ClInclude Include="sockaddr.h" />
+    <ClInclude Include="splay.h" />
+    <ClInclude Include="strdup.h" />
+    <ClInclude Include="socks.h" />
+    <ClInclude Include="ssh.h" />
+    <ClInclude Include="curl_base64.h" />
+    <ClInclude Include="curl_addrinfo.h" />
+    <ClInclude Include="curl_sspi.h" />
+    <ClInclude Include="slist.h" />
+    <ClInclude Include="nonblock.h" />
+    <ClInclude Include="curl_memrchr.h" />
+    <ClInclude Include="imap.h" />
+    <ClInclude Include="pop3.h" />
+    <ClInclude Include="smtp.h" />
+    <ClInclude Include="pingpong.h" />
+    <ClInclude Include="rtsp.h" />
+    <ClInclude Include="curl_threads.h" />
+    <ClInclude Include="warnless.h" />
+    <ClInclude Include="curl_hmac.h" />
+    <ClInclude Include="curl_rtmp.h" />
+    <ClInclude Include="curl_gethostname.h" />
+    <ClInclude Include="gopher.h" />
+    <ClInclude Include="http_proxy.h" />
+    <ClInclude Include="non-ascii.h" />
+    <ClInclude Include="asyn.h" />
+    <ClInclude Include="http_ntlm.h" />
+    <ClInclude Include="curl_gssapi.h" />
+    <ClInclude Include="curl_ntlm_wb.h" />
+    <ClInclude Include="curl_ntlm_core.h" />
+    <ClInclude Include="curl_sasl.h" />
+    <ClInclude Include="curl_multibyte.h" />
+    <ClInclude Include="hostcheck.h" />
+    <ClInclude Include="conncache.h" />
+    <ClInclude Include="curl_setup_once.h" />
+    <ClInclude Include="multihandle.h" />
+    <ClInclude Include="setup-vms.h" />
+    <ClInclude Include="pipeline.h" />
+    <ClInclude Include="dotdot.h" />
+    <ClInclude Include="x509asn1.h" />
+    <ClInclude Include="http2.h" />
+    <ClInclude Include="sigpipe.h" />
+    <ClInclude Include="smb.h" />
+    <ClInclude Include="curl_endian.h" />
+    <ClInclude Include="curl_des.h" />
+    <ClInclude Include="curl_printf.h" />
+    <ClInclude Include="system_win32.h" />
+    <ClInclude Include="rand.h" />
+    <ClInclude Include="vauth\vauth.h" />
+    <ClInclude Include="vauth\digest.h" />
+    <ClInclude Include="vauth\ntlm.h" />
+    <ClInclude Include="vtls\openssl.h" />
+    <ClInclude Include="vtls\vtls.h" />
+    <ClInclude Include="vtls\gtls.h" />
+    <ClInclude Include="vtls\nssg.h" />
+    <ClInclude Include="vtls\polarssl.h" />
+    <ClInclude Include="vtls\polarssl_threadlock.h" />
+    <ClInclude Include="vtls\axtls.h" />
+    <ClInclude Include="vtls\cyassl.h" />
+    <ClInclude Include="vtls\schannel.h" />
+    <ClInclude Include="vtls\darwinssl.h" />
+    <ClInclude Include="vtls\gskit.h" />
+    <ClInclude Include="vtls\mbedtls.h" />
+    <ClInclude Include="curl_config.h" />
+    <ClInclude Include="..\include\curl\curlbuild.h" />
+    <ClCompile Include="file.c" />
+    <ClCompile Include="timeval.c" />
+    <ClCompile Include="base64.c" />
+    <ClCompile Include="hostip.c" />
+    <ClCompile Include="progress.c" />
+    <ClCompile Include="formdata.c" />
+    <ClCompile Include="cookie.c" />
+    <ClCompile Include="http.c" />
+    <ClCompile Include="sendf.c" />
+    <ClCompile Include="ftp.c" />
+    <ClCompile Include="url.c" />
+    <ClCompile Include="dict.c" />
+    <ClCompile Include="if2ip.c" />
+    <ClCompile Include="speedcheck.c" />
+    <ClCompile Include="ldap.c" />
+    <ClCompile Include="version.c" />
+    <ClCompile Include="getenv.c" />
+    <ClCompile Include="escape.c" />
+    <ClCompile Include="mprintf.c" />
+    <ClCompile Include="telnet.c" />
+    <ClCompile Include="netrc.c" />
+    <ClCompile Include="getinfo.c" />
+    <ClCompile Include="transfer.c" />
+    <ClCompile Include="strcase.c" />
+    <ClCompile Include="easy.c" />
+    <ClCompile Include="security.c" />
+    <ClCompile Include="curl_fnmatch.c" />
+    <ClCompile Include="fileinfo.c" />
+    <ClCompile Include="ftplistparser.c" />
+    <ClCompile Include="wildcard.c" />
+    <ClCompile Include="krb5.c" />
+    <ClCompile Include="memdebug.c" />
+    <ClCompile Include="http_chunks.c" />
+    <ClCompile Include="strtok.c" />
+    <ClCompile Include="connect.c" />
+    <ClCompile Include="llist.c" />
+    <ClCompile Include="hash.c" />
+    <ClCompile Include="multi.c" />
+    <ClCompile Include="content_encoding.c" />
+    <ClCompile Include="share.c" />
+    <ClCompile Include="http_digest.c" />
+    <ClCompile Include="md4.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="http_negotiate.c" />
+    <ClCompile Include="inet_pton.c" />
+    <ClCompile Include="strtoofft.c" />
+    <ClCompile Include="strerror.c" />
+    <ClCompile Include="amigaos.c" />
+    <ClCompile Include="hostasyn.c" />
+    <ClCompile Include="hostip4.c" />
+    <ClCompile Include="hostip6.c" />
+    <ClCompile Include="hostsyn.c" />
+    <ClCompile Include="inet_ntop.c" />
+    <ClCompile Include="parsedate.c" />
+    <ClCompile Include="select.c" />
+    <ClCompile Include="tftp.c" />
+    <ClCompile Include="splay.c" />
+    <ClCompile Include="strdup.c" />
+    <ClCompile Include="socks.c" />
+    <ClCompile Include="ssh.c" />
+    <ClCompile Include="curl_addrinfo.c" />
+    <ClCompile Include="socks_gssapi.c" />
+    <ClCompile Include="socks_sspi.c" />
+    <ClCompile Include="curl_sspi.c" />
+    <ClCompile Include="slist.c" />
+    <ClCompile Include="nonblock.c" />
+    <ClCompile Include="curl_memrchr.c" />
+    <ClCompile Include="imap.c" />
+    <ClCompile Include="pop3.c" />
+    <ClCompile Include="smtp.c" />
+    <ClCompile Include="pingpong.c" />
+    <ClCompile Include="rtsp.c" />
+    <ClCompile Include="curl_threads.c" />
+    <ClCompile Include="warnless.c" />
+    <ClCompile Include="hmac.c" />
+    <ClCompile Include="curl_rtmp.c" />
+    <ClCompile Include="openldap.c" />
+    <ClCompile Include="curl_gethostname.c" />
+    <ClCompile Include="gopher.c" />
+    <ClCompile Include="idn_win32.c" />
+    <ClCompile Include="http_proxy.c" />
+    <ClCompile Include="non-ascii.c" />
+    <ClCompile Include="asyn-ares.c" />
+    <ClCompile Include="asyn-thread.c" />
+    <ClCompile Include="curl_gssapi.c" />
+    <ClCompile Include="http_ntlm.c" />
+    <ClCompile Include="curl_ntlm_wb.c" />
+    <ClCompile Include="curl_ntlm_core.c" />
+    <ClCompile Include="curl_sasl.c" />
+    <ClCompile Include="rand.c" />
+    <ClCompile Include="curl_multibyte.c" />
+    <ClCompile Include="hostcheck.c" />
+    <ClCompile Include="conncache.c" />
+    <ClCompile Include="pipeline.c" />
+    <ClCompile Include="dotdot.c" />
+    <ClCompile Include="x509asn1.c" />
+    <ClCompile Include="http2.c" />
+    <ClCompile Include="smb.c" />
+    <ClCompile Include="curl_endian.c" />
+    <ClCompile Include="curl_des.c" />
+    <ClCompile Include="system_win32.c" />
+    <ClCompile Include="vauth\vauth.c" />
+    <ClCompile Include="vauth\cleartext.c" />
+    <ClCompile Include="vauth\cram.c" />
+    <ClCompile Include="vauth\digest.c" />
+    <ClCompile Include="vauth\digest_sspi.c" />
+    <ClCompile Include="vauth\krb5_gssapi.c" />
+    <ClCompile Include="vauth\krb5_sspi.c" />
+    <ClCompile Include="vauth\ntlm.c" />
+    <ClCompile Include="vauth\ntlm_sspi.c" />
+    <ClCompile Include="vauth\oauth2.c" />
+    <ClCompile Include="vauth\spnego_gssapi.c" />
+    <ClCompile Include="vauth\spnego_sspi.c" />
+    <ClCompile Include="vtls\openssl.c" />
+    <ClCompile Include="vtls\gtls.c" />
+    <ClCompile Include="vtls\vtls.c" />
+    <ClCompile Include="vtls\nss.c" />
+    <ClCompile Include="vtls\polarssl.c" />
+    <ClCompile Include="vtls\polarssl_threadlock.c" />
+    <ClCompile Include="vtls\axtls.c" />
+    <ClCompile Include="vtls\cyassl.c" />
+    <ClCompile Include="vtls\schannel.c" />
+    <ClCompile Include="vtls\darwinssl.c" />
+    <ClCompile Include="vtls\gskit.c" />
+    <ClCompile Include="vtls\mbedtls.c" />
+    <ResourceCompile Include="libcurl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/ZERO_CHECK.vcxproj">
+      <Project>65961CB6-4415-324A-885A-14C2690F2B2A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

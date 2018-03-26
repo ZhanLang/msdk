@@ -1,0 +1,23 @@
+mscom      COM基础
+util       基础单元
+sqlite     Sqlite数据库
+xml	   xml处理
+
+arithmetic 基础算法
+	---compress压缩解压缩com组件
+	---encrypt加密解密
+	---validate数据验证
+
+exceptionreport 进程一场处理
+
+process     进程相关
+	serviceopt--操作服务
+	formatAargs.h 格式化当前进程命令行
+
+SyncObject  同步处理
+
+msc c-s-c模式管道进程间通信
+
+procsend c-c模式内存映射文件进程间通信
+
+lzma -- 7z压缩解压缩

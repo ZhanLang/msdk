@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D2B748CC-33B0-3FC2-82A7-F5CBFDC841F6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/ZERO_CHECK.vcxproj">
+      <Project>65961CB6-4415-324A-885A-14C2690F2B2A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/chkhostname.vcxproj">
+      <Project>FE72FF92-6A5A-30F4-B09B-C98258844B56</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/src/curl.vcxproj">
+      <Project>31812826-D389-37B3-94C5-004C88232A04</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/fake_ntlm.vcxproj">
+      <Project>AF524308-72D0-3FE2-B058-CEBBEF854E74</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/getpart.vcxproj">
+      <Project>9A5F5BC3-C26A-3C99-B135-F114AFFA84E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1500.vcxproj">
+      <Project>58688229-A19F-3839-932A-298ABD84CB8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1501.vcxproj">
+      <Project>BDE551C1-13DC-3EC6-978F-5B19839879DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1502.vcxproj">
+      <Project>ABB10E2C-A36B-3F16-8658-0E7BE2EDE5DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1503.vcxproj">
+      <Project>BF2224DC-09C6-3DBD-BBB8-1B6AABDB8343</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1504.vcxproj">
+      <Project>B1FEA5C7-5313-3AAC-8F08-38A7AC986F19</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1505.vcxproj">
+      <Project>61B63F7D-64D0-3CD8-AC31-6DB7F30C0AFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1506.vcxproj">
+      <Project>F4A2BD77-C13F-3513-99EE-6A12F2B02F6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1507.vcxproj">
+      <Project>A80D20AE-E171-3256-8D0A-501E5CEE767B</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1508.vcxproj">
+      <Project>956C5EC6-A5CE-312E-B8C2-75F53A3D080A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1509.vcxproj">
+      <Project>6582FD1E-9B78-31E8-8AED-30D7453EAF08</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1510.vcxproj">
+      <Project>2348B80E-D31C-370A-90EF-049FA08DCE3D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1511.vcxproj">
+      <Project>0F09BDE2-31D3-3CC9-9BDC-D8E9066BA4D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1512.vcxproj">
+      <Project>63B49CDD-47A0-3422-9F1D-B8D2CCA4F636</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1513.vcxproj">
+      <Project>5F0A31B8-AA34-37DA-B8BD-3965C973F330</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1514.vcxproj">
+      <Project>B64F9D6E-CA34-3A3D-A3EC-F099A4A9296D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1515.vcxproj">
+      <Project>A7EE4437-8C7B-35A0-A45C-3591879B0E75</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1517.vcxproj">
+      <Project>7E657304-42EF-35DE-945A-76CE0CDA3B15</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1520.vcxproj">
+      <Project>6843B9BE-3278-373C-B782-0C4887E4A10F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1525.vcxproj">
+      <Project>4C65CD73-0A96-33DA-9641-2F78C9A433BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1526.vcxproj">
+      <Project>B3E20CEE-B540-3749-AC42-92C1E274ADBA</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1527.vcxproj">
+      <Project>F3ED562A-09EB-3B36-9E01-60B2F6F60E19</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1528.vcxproj">
+      <Project>C261DE38-8843-3CBC-8251-FE5C960A1537</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1529.vcxproj">
+      <Project>4DA8C62C-4610-359E-B627-0469DF01FF25</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1530.vcxproj">
+      <Project>42235E4E-9EAE-3524-BF5C-C757C804040F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1531.vcxproj">
+      <Project>8F04DC1E-AA5E-3363-A6FC-E59CB1174E8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1532.vcxproj">
+      <Project>4DB83015-0E45-3F26-9B8E-2106FA4A7198</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1533.vcxproj">
+      <Project>DF0A7DE4-36EE-3F92-83F1-414FC01B9A12</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1534.vcxproj">
+      <Project>BAC346A1-264D-374F-9AAB-CCC2F016E3EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1535.vcxproj">
+      <Project>80135E08-18AB-3511-8FE1-4A1DC18A35AC</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1536.vcxproj">
+      <Project>E1BF62AB-D4EA-3073-86A7-29BA91566A90</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib1900.vcxproj">
+      <Project>B71C97DA-694C-3788-A8F1-192B40045AF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib2033.vcxproj">
+      <Project>74B1551A-E28E-363F-882D-A3D058B07D45</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib500.vcxproj">
+      <Project>2984E4DC-E4A4-30CA-87F8-D1E0B0A65735</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib501.vcxproj">
+      <Project>543D398F-197D-3D1A-BA85-46F0497E6322</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib502.vcxproj">
+      <Project>81F03B77-5846-367B-B8E7-3C760753020F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib503.vcxproj">
+      <Project>CB7FFFB6-688E-38B4-8B41-6580E83D0AA4</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib504.vcxproj">
+      <Project>E38B16BC-8B1E-322F-92BD-1CF881F4D07C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib505.vcxproj">
+      <Project>E6A0FD85-2A72-356B-851A-9E71D6EB8AAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib506.vcxproj">
+      <Project>950612E1-A944-3B46-A07C-E0D042611300</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib507.vcxproj">
+      <Project>C464B1B0-4DAB-3CA8-976C-5EA92515C3FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib508.vcxproj">
+      <Project>C0C0A24A-3DF3-3049-B63E-F89FC6659DC3</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib509.vcxproj">
+      <Project>EAA5BC79-6813-363D-A13F-6DD3C6574C5A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib510.vcxproj">
+      <Project>9615D224-832F-32FC-A3B4-4F9EF0A05205</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib511.vcxproj">
+      <Project>D5B0C49E-BDA4-36D7-B873-F36360C80385</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib512.vcxproj">
+      <Project>8701F5B1-82FF-3E0D-98C7-7E03B0531793</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib513.vcxproj">
+      <Project>E7F76BF2-0033-3AA0-AA9F-F5B69B3B76D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib514.vcxproj">
+      <Project>0580E0F4-15D4-3ACA-A70E-B08248477B71</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib515.vcxproj">
+      <Project>16AF849B-1BA8-30F4-8C77-EAB1ECB0B93D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib516.vcxproj">
+      <Project>11279C64-FC3C-3F38-BD45-93CAFE73F42C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib517.vcxproj">
+      <Project>B89FAFE4-7695-3554-8149-B3CDDCE87233</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib518.vcxproj">
+      <Project>6CE24E53-B8E3-3B90-A33D-C34449F64469</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib519.vcxproj">
+      <Project>60B0A9C1-8949-3506-A1C0-94DE7671225C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib520.vcxproj">
+      <Project>497616F8-C1A0-346F-9677-30BDB464C056</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib521.vcxproj">
+      <Project>4062B752-79BF-32F7-9153-D9D5F374AF06</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib523.vcxproj">
+      <Project>1AA784DE-6252-397A-AD65-DD690127BA0A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib524.vcxproj">
+      <Project>9D637296-08FE-3C7E-B930-BF3B4361AC21</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib525.vcxproj">
+      <Project>E1DADACA-CBC1-34F3-A2B8-1EA35BE2C77D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib526.vcxproj">
+      <Project>0098E638-2FA7-3439-A41D-6756606CF402</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib527.vcxproj">
+      <Project>15DC660E-C0AA-3930-980A-96B6D34B61C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib529.vcxproj">
+      <Project>14165F2F-AF3D-3F30-AB2D-D306774C5771</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib530.vcxproj">
+      <Project>666D5790-C6EF-3093-AB97-F34242EB2A7D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib532.vcxproj">
+      <Project>1CD44A89-2E07-39F2-84A9-1B4D41B6D36A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib533.vcxproj">
+      <Project>74D0DBC7-20D9-334F-AB67-FDCFC5CC312C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib536.vcxproj">
+      <Project>AC996757-28CE-3489-9EBE-09CB837AD7CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib537.vcxproj">
+      <Project>D0873D9C-E05F-3493-9D58-9C94525605CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib539.vcxproj">
+      <Project>0E2F56FC-7DFE-3B45-87A3-055FB2BC4770</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib540.vcxproj">
+      <Project>763672C3-B0C8-3EA1-8960-176A16FE6B11</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib541.vcxproj">
+      <Project>76EC9F35-241C-3D87-9BDE-A3CD02A88BA1</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib542.vcxproj">
+      <Project>35B5BD4A-AD6C-309F-A234-76EDE9A6B780</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib543.vcxproj">
+      <Project>492E3973-9529-3607-B378-1C2923CCD540</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib544.vcxproj">
+      <Project>B8F16CCC-0DCF-3EA7-A35A-43808B22F2D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib545.vcxproj">
+      <Project>4939F617-59B5-3234-9259-6B4DE7672458</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib547.vcxproj">
+      <Project>EE10C42F-20D9-3E38-8482-9BDB76086058</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib548.vcxproj">
+      <Project>46E6B6F6-D996-3A3C-BA45-DCF78504A9E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib549.vcxproj">
+      <Project>8AA1E04F-249C-384B-825F-2736533F4AE5</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib552.vcxproj">
+      <Project>077E36B8-7E4E-3675-B4F7-8479DFACFD81</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib553.vcxproj">
+      <Project>44694F58-26F5-3B5E-B354-1E4B2D33F82F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib554.vcxproj">
+      <Project>FB3472E8-A7D2-3751-BE30-8CE266BF01E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib555.vcxproj">
+      <Project>FCC57E65-4C2B-3F78-B8A7-49B023228FC8</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib556.vcxproj">
+      <Project>2B1FEC19-3529-35A2-B121-3CDDC2243ACF</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib557.vcxproj">
+      <Project>7988F73D-70A1-3B2E-9B4A-38422C21FA1C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib558.vcxproj">
+      <Project>3B421338-8B45-3012-965A-1F138A831F11</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib560.vcxproj">
+      <Project>BFEACDA9-1661-3B3B-BE9C-451850B245BC</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib562.vcxproj">
+      <Project>98639861-8095-3EA3-ACA7-BF42BE87CB8B</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib564.vcxproj">
+      <Project>D1507F1D-4C01-32AE-ADD1-3D1B0F6EFD7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib565.vcxproj">
+      <Project>20A8A8EC-EAB0-3FEF-8F6C-4D7A57B8408E</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib566.vcxproj">
+      <Project>6C6E7442-635B-3F49-AE03-DC72521F0C29</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib567.vcxproj">
+      <Project>DFC7135D-F1EE-3D9E-BD7E-2767A54B9172</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib568.vcxproj">
+      <Project>59D8F0D2-2258-3012-9BF0-497A512A875A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib569.vcxproj">
+      <Project>74FDC262-36A1-3681-B3C8-732B71105072</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib570.vcxproj">
+      <Project>C8F95B77-E1AB-3349-887D-BCD15478DED7</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib571.vcxproj">
+      <Project>67494F9A-A7EB-3538-A068-C308898CCD16</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib572.vcxproj">
+      <Project>3D919FC6-FC23-30CD-B55D-BC25EC8BE29D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib573.vcxproj">
+      <Project>CB175DE0-45AA-3A82-87F2-BF50D8D52D46</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib574.vcxproj">
+      <Project>9A116BFA-A27F-3829-9E78-FA5A9CB578C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib575.vcxproj">
+      <Project>CFD405C8-3DE2-3A2B-9C30-008F2624AC06</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib576.vcxproj">
+      <Project>6C50124C-B5AB-3852-BF9E-0521DA6AF0A7</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib578.vcxproj">
+      <Project>42107E88-BCB6-3EE0-AE0B-759011B5E79C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib579.vcxproj">
+      <Project>0FDCBCB5-46D1-3649-A4D5-2C7F83EC0A29</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib582.vcxproj">
+      <Project>DB7AECEE-5EA2-3863-A45C-31BA834ABAB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib583.vcxproj">
+      <Project>DE73065E-507C-3AC2-A20B-8B7346E53682</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib585.vcxproj">
+      <Project>348D1A56-579A-33C6-9DB7-BCF3CEF57209</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib586.vcxproj">
+      <Project>77164DB2-A93D-3856-BF4F-19B081298F37</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib587.vcxproj">
+      <Project>BDC8B0DE-463D-330A-A639-B1AC86D10F38</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib590.vcxproj">
+      <Project>2203A098-7CB9-364A-AF05-169BA254060C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib591.vcxproj">
+      <Project>864D63C4-5A37-3BF7-858D-1D76F5D3DA8D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib597.vcxproj">
+      <Project>D50EB46A-ED24-35F2-A1E1-5B108D97E308</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib598.vcxproj">
+      <Project>2270C752-2706-3AB3-BC67-88513FA50788</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/lib599.vcxproj">
+      <Project>AD7C80CD-4B36-3DAD-8689-D35DCBA5315A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/libauthretry.vcxproj">
+      <Project>B1A661E3-8F16-3559-A292-93ED04165E3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/lib/libcurl.vcxproj">
+      <Project>6FA591F7-55E9-3948-A16D-33996A2DA351</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/libtest/libntlmconnect.vcxproj">
+      <Project>875198DD-61B9-386B-8374-0E44F309EABB</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/resolve.vcxproj">
+      <Project>3F70B806-9929-32FD-B6C6-1CAAE8A321A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/rtspd.vcxproj">
+      <Project>D0C2D332-8E3A-3BD5-9BA9-405659AA5FB3</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/sockfilt.vcxproj">
+      <Project>EC299B3D-D5A2-366C-A190-B44D7420F524</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/sws.vcxproj">
+      <Project>CE304950-0287-3DA6-955F-B74924E50F25</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/curl/tests/server/tftpd.vcxproj">
+      <Project>18761049-90B1-3BD4-A254-944214920EFD</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

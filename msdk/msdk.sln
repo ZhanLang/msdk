@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common file", "common file", "{C8ED34AA-9BEA-4B05-8B0B-A3C3E313FB64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mscom", "mscom", "{A779B4C4-DF6A-4AA3-A9B4-CE63DC5F9E40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "msapi", "msapi", "{8FE9C234-B61E-48F4-A623-F7E482C34BB7}"
+	ProjectSection(SolutionItems) = preProject
+		include\msapi\mswinapi.h = include\msapi\mswinapi.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "util", "util", "{E9B4F5CB-62F3-4C73-A90F-0B085395ACBD}"
+	ProjectSection(SolutionItems) = preProject
+		include\util\endian.h = include\util\endian.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bin", "..\mscom\bin.exe\bin10.vcxproj", "{2D44BA77-3EB0-4C41-9386-0DD813CB6B99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "msguid", "msguid", "{3F6196F1-E24A-41D9-A323-7B5979AF6701}"
+	ProjectSection(SolutionItems) = preProject
+		include\msguid\GetCpuInfo.h = include\msguid\GetCpuInfo.h
+		include\msguid\GetDiskInfo.h = include\msguid\GetDiskInfo.h
+		include\msguid\GetMBSerial.h = include\msguid\GetMBSerial.h
+		include\msguid\GetNetAdapterInfo.h = include\msguid\GetNetAdapterInfo.h
+		include\msguid\guidcrc.h = include\msguid\guidcrc.h
+		include\msguid\guidio.h = include\msguid\guidio.h
+		include\msguid\userguid.h = include\msguid\userguid.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D44BA77-3EB0-4C41-9386-0DD813CB6B99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D44BA77-3EB0-4C41-9386-0DD813CB6B99}.Debug|Win32.Build.0 = Debug|Win32
+		{2D44BA77-3EB0-4C41-9386-0DD813CB6B99}.Release|Win32.ActiveCfg = Release|Win32
+		{2D44BA77-3EB0-4C41-9386-0DD813CB6B99}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A779B4C4-DF6A-4AA3-A9B4-CE63DC5F9E40} = {C8ED34AA-9BEA-4B05-8B0B-A3C3E313FB64}
+	EndGlobalSection
+EndGlobal

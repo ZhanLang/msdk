@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netbase", "netbase.vcproj", "{266E959C-7EAC-4A28-9313-ED7B5B74C13E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{266E959C-7EAC-4A28-9313-ED7B5B74C13E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{266E959C-7EAC-4A28-9313-ED7B5B74C13E}.Debug|Win32.Build.0 = Debug|Win32
+		{266E959C-7EAC-4A28-9313-ED7B5B74C13E}.Release|Win32.ActiveCfg = Release|Win32
+		{266E959C-7EAC-4A28-9313-ED7B5B74C13E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{669407d4-8269-425a-b56c-360bcf818d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libsrc">
+      <UniqueIdentifier>{75944fdc-812d-4f91-b3b9-0a3c1c52cbc6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ntfslib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\attrdef.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\attrib.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\attrlist.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\bitmap.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\boot.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\bootsect.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\collate.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\compat.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\compress.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\debug.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\device.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\dir.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\index.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\inode.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\lcnalloc.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\logfile.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\mft.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\misc.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\mkntfs.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\mst.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\runlist.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\sd.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\security.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\unistr.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\utils.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\version.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\volume.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="libsrc\win32_io.c">
+      <Filter>libsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="Ntfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ntfslib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attrib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attrlist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bitmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bootsect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\collate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compress.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\device.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\device_io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dir.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\endians.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\layout.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lcnalloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\logfile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\logging.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\misc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mkntfs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mst.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ntfstime.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\runlist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\security.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\support.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\unistr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\volume.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32_io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

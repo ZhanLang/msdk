@@ -1,0 +1,949 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\My002.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\002.ico"
+IDR_My002TYPE           ICON                    "res\\002Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PNG_TOP_TOOLBAR     PNG                     "res\\bar_top.png"
+IDR_PNG_SHADOW          PNG                     "res\\shadow.png"
+IDR_PNG_TEXTURE_BRICKS  PNG                     "res\\tex_bricks.png"
+IDR_PNG_TEXTURE_CANVAS_1 PNG                     "res\\tex_canvas_1.png"
+IDR_PNG_TEXTURE_CANVAS_2 PNG                     "res\\tex_canvas_2.png"
+IDR_PNG_TEXTURE_LEATHER PNG                     "res\\tex_leather.png"
+IDR_PNG_TEXTURE_SANDSTONE PNG                     "res\\tex_sandstone.png"
+IDR_PNG_TEXTURE_WEAVE   PNG                     "res\\tex_weave.png"
+IDR_PNG_TEXTURE_MAT     PNG                     "res\\tex_mat.png"
+IDR_PNG_TEXTURE_GRID    PNG                     "res\\tex_grid.png"
+IDR_PNG_TEXTURE_DOT     PNG                     "res\\tex_dot.png"
+IDR_PNG_EXAMPLE         PNG                     "res\\example.jpg"
+ID_FILE_SAVE_AS         PNG                     "res\\menu_icon\\save_as.png"
+ID_FILE_OPEN            PNG                     "res\\menu_icon\\open.png"
+ID_EFFECT_MIRROR        PNG                     "res\\menu_icon\\mirror.png"
+ID_EFFECT_FLIP          PNG                     "res\\menu_icon\\flip.png"
+ID_EFFECT_SMOOTHEDGE    PNG                     "res\\menu_icon\\smooth_edge.png"
+ID_EFFECT_COLORTONE     PNG                     "res\\menu_icon\\color_tone.png"
+ID_FILE_PRINT           PNG                     "res\\menu_icon\\print.png"
+ID_EFFECT_CANVAS_STRETCH PNG                     "res\\menu_icon\\resize.png"
+ID_EFFECT_COLORBALANCE  PNG                     "res\\menu_icon\\color_balance.png"
+ID_EFFECT_GRAYSCALE     PNG                     "res\\menu_icon\\grayscale.png"
+ID_APP_EXIT             PNG                     "res\\menu_icon\\quit.png"
+ID_EFFECT_HUE           PNG                     "res\\menu_icon\\hue_saturation.png"
+ID_EFFECT_BRIGHTNESS    PNG                     "res\\menu_icon\\brightness_contrast.png"
+ID_EFFECT_ADJUSTRGB     PNG                     "res\\menu_icon\\adjustrgb.png"
+ID_EFFECT_COLORLEVEL    PNG                     "res\\menu_icon\\color_level.png"
+ID_EFFECT_LENSFLARE     PNG                     "res\\menu_icon\\effect_lensflare.png"
+ID_TOOL_EXPORT_ASCII    PNG                     "res\\menu_icon\\to_ascii.png"
+ID_EFFECT_ROTATE90      PNG                     "res\\menu_icon\\rotate90.png"
+ID_EFFECT_ROTATE270     PNG                     "res\\menu_icon\\rotate270.png"
+ID_EFFECT_OILPAINT      PNG                     "res\\menu_icon\\effect_oil.png"
+ID_EFFECT_PENCILSKETCH  PNG                     "res\\menu_icon\\effect_pencil.png"
+ID_EFFECT_TWIST         PNG                     "res\\menu_icon\\effect_twist.png"
+ID_EFFECT_FILLGRID      PNG                     "res\\menu_icon\\effect_fillgrid.png"
+ID_EFFECT_SPLASH        PNG                     "res\\menu_icon\\effect_splash.png"
+ID_EFFECT_INVERT        PNG                     "res\\menu_icon\\effect_invert.png"
+ID_EFFECT_SUPERNOVA     PNG                     "res\\menu_icon\\effect_supernova.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Effect Lib",                 ID_EFFECT_LIB_VISIBLE
+    END
+END
+
+IDR_My002TYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "XXX",                         ID_EFFECT_BRIGHTNESS
+        MENUITEM "XXX",                         ID_EFFECT_HUE
+        MENUITEM "XXX",                         ID_EFFECT_COLORTONE
+        MENUITEM "XXX",                         ID_EFFECT_GRAYSCALE
+        MENUITEM "XXX",                         ID_EFFECT_SOFTGLOW
+        MENUITEM "XXX",                         ID_EFFECT_SOFT_PORTRAIT
+        POPUP "s_2_0"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_ADJUSTRGB
+            MENUITEM "XXX",                         ID_EFFECT_GAMMA
+            MENUITEM "XXX",                         ID_EFFECT_COLORLEVEL
+            MENUITEM "XXX",                         ID_EFFECT_COLORBALANCE
+            MENUITEM "XXX",                         ID_EFFECT_MOSAIC
+            MENUITEM "XXX",                         ID_EFFECT_INVERT
+            MENUITEM SEPARATOR
+            MENUITEM "XXX",                         ID_EFFECT_AUTO_COLOR_LEVEL
+            MENUITEM "XXX",                         ID_EFFECT_AUTO_CONTRAST
+            MENUITEM "XXX",                         ID_EFFECT_AUTO_COLORENHANCE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "XXX",                         ID_EFFECT_CANVAS_STRETCH
+        MENUITEM SEPARATOR
+        MENUITEM "XXX",                         ID_EFFECT_FLIP
+        MENUITEM "XXX",                         ID_EFFECT_MIRROR
+        MENUITEM "XXX",                         ID_EFFECT_ROTATE90
+        MENUITEM "XXX",                         ID_EFFECT_ROTATE270
+        MENUITEM SEPARATOR
+        MENUITEM "XXX",                         ID_EFFECT_SMOOTHEDGE
+        MENUITEM "XXX",                         ID_EFFECT_SHADOW
+        POPUP "s_2_2"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_BLUR_GAUSS
+            MENUITEM "XXX",                         ID_EFFECT_DESPECKLE
+            MENUITEM SEPARATOR
+            MENUITEM "XXX",                         ID_EFFECT_BLURMOTION
+            MENUITEM "XXX",                         ID_EFFECT_BLURZOOM
+            MENUITEM "XXX",                         ID_EFFECT_BLURRADIAL
+        END
+        POPUP "s_2_3"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_SHARP
+            MENUITEM "XXX",                         ID_EFFECT_USMSHARP
+        END
+    END
+    POPUP "s_3"
+    BEGIN
+        POPUP "s_3_0"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_NOISIFY
+            MENUITEM "XXX",                         ID_EFFECT_OILPAINT
+            MENUITEM "XXX",                         ID_EFFECT_EMBOSS
+            MENUITEM "XXX",                         ID_EFFECT_SPLASH
+            MENUITEM "XXX",                         ID_EFFECT_POSTERIZE
+            MENUITEM "XXX",                         ID_EFFECT_TEXTURE
+            MENUITEM "XXX",                         ID_EFFECT_3DGRID
+            MENUITEM "XXX",                         ID_EFFECT_PENCILSKETCH
+        END
+        POPUP "s_3_1"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_SHIFT
+            MENUITEM "XXX",                         ID_EFFECT_RIBBON
+            MENUITEM "XXX",                         ID_EFFECT_BULGE
+            MENUITEM "XXX",                         ID_EFFECT_TWIST
+            MENUITEM "XXX",                         ID_EFFECT_ILLUSION
+            MENUITEM "XXX",                         ID_EFFECT_WAVE
+            MENUITEM "XXX",                         ID_EFFECT_RIPPLE
+        END
+        POPUP "s_3_2"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_LENSFLARE
+            MENUITEM "XXX",                         ID_EFFECT_SUPERNOVA
+            MENUITEM "XXX",                         ID_EFFECT_GLASSTILE
+            MENUITEM "XXX",                         ID_EFFECT_BLINDS
+            MENUITEM "XXX",                         ID_EFFECT_RAISEFRAME
+        END
+        POPUP "s_3_3"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_HALFTONE
+            MENUITEM "XXX",                         ID_EFFECT_THRESHOLD
+            MENUITEM "XXX",                         ID_EFFECT_SOLARIZE
+            MENUITEM "XXX",                         ID_EFFECT_OLDPHOTO
+        END
+        POPUP "s_3_4"
+        BEGIN
+            MENUITEM "XXX",                         ID_EFFECT_FILLGRID
+            MENUITEM "XXX",                         ID_EFFECT_VIDEO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "XXX",                         ID_EFFECT_CUSTOMFILTER
+        MENUITEM "XXX",                         ID_TOOL_EXPORT_ASCII
+        MENUITEM "XXX",                         ID_EFFECT_DRAW_TEXT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Effect Lib",                 ID_EFFECT_LIB_VISIBLE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_AS,        VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EFFECT_CANVAS_STRETCH, VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMAGE_RESIZE DIALOGEX 0, 0, 203, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,79,156,51,16
+    PUSHBUTTON      "XXX",IDCANCEL,138,156,51,16
+    GROUPBOX        "",IDC_STATIC,5,1,191,81,WS_GROUP
+    CONTROL         "XXX",1000,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,14,131,11,WS_EX_TRANSPARENT
+    RTEXT           "XXX",1200,10,36,33,12
+    EDITTEXT        1001,44,34,30,13,ES_RIGHT | ES_NUMBER
+    LTEXT           "XXX",1204,77,36,27,11
+    RTEXT           "XXX",1202,105,36,38,12
+    EDITTEXT        1003,144,34,25,13,ES_RIGHT | ES_NUMBER
+    LTEXT           "%",IDC_STATIC,172,36,12,12
+    RTEXT           "XXX",1201,10,60,33,12
+    EDITTEXT        1002,44,57,30,13,ES_RIGHT | ES_NUMBER
+    LTEXT           "XXX",1205,77,59,27,11
+    RTEXT           "XXX",1203,105,60,38,12
+    EDITTEXT        1004,144,57,25,13,ES_RIGHT | ES_NUMBER
+    LTEXT           "%",IDC_STATIC,172,59,12,12
+    CONTROL         "XXX",1500,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,107,135,13
+    CONTROL         "XXX",1501,"Button",BS_AUTORADIOBUTTON,21,127,135,13
+    GROUPBOX        "XXX",1300,5,91,191,59,WS_GROUP
+END
+
+IDD_SAVE_IMAGE DIALOGEX 0, 0, 372, 117
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",1119,0,0,372,70,NOT WS_VISIBLE
+    RTEXT           "XXX",1260,42,74,73,10
+    CONTROL         "Slider1",1261,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,116,70,173,16
+    LTEXT           "XXX",1262,293,73,70,10
+    CONTROL         "XXX",1250,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,70,150,9
+    CONTROL         "XXX",1270,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,97,150,10
+END
+
+IDD_EFFECT_LIB DIALOGEX 0, 0, 79, 144
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_EFFECT_CUSTOM DIALOGEX 0, 0, 229, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,174,13,46,17
+    PUSHBUTTON      "Cancel",IDCANCEL,174,36,46,17
+    PUSHBUTTON      "Load",2600,174,94,46,17
+    PUSHBUTTON      "Save",2601,174,118,46,17
+    EDITTEXT        2000,20,19,23,12
+    EDITTEXT        2001,47,19,23,12
+    EDITTEXT        2002,74,19,23,12
+    EDITTEXT        2003,101,19,23,12
+    EDITTEXT        2004,128,19,23,12
+    EDITTEXT        2005,20,35,23,12
+    EDITTEXT        2006,47,35,23,12
+    EDITTEXT        2007,74,35,23,12
+    EDITTEXT        2008,101,35,23,12
+    EDITTEXT        2009,128,35,23,12
+    EDITTEXT        2010,20,51,23,12
+    EDITTEXT        2011,47,51,23,12
+    EDITTEXT        2012,74,51,23,12
+    EDITTEXT        2013,101,51,23,12
+    EDITTEXT        2014,128,51,23,12
+    EDITTEXT        2015,20,67,23,12
+    EDITTEXT        2016,47,67,23,12
+    EDITTEXT        2017,74,67,23,12
+    EDITTEXT        2018,101,67,23,12
+    EDITTEXT        2019,128,67,23,12
+    EDITTEXT        2020,20,83,23,12
+    EDITTEXT        2021,47,83,23,12
+    EDITTEXT        2022,74,83,23,12
+    EDITTEXT        2023,101,83,23,12
+    EDITTEXT        2024,128,83,23,12
+    GROUPBOX        "",IDC_STATIC,8,7,155,96
+    RTEXT           "XXX",2200,11,124,29,12
+    EDITTEXT        2500,46,122,28,13
+    RTEXT           "XXX",2201,84,124,29,12
+    EDITTEXT        2501,119,122,28,13
+    GROUPBOX        "",IDC_STATIC,8,108,155,37
+END
+
+IDD_EFFECT_VIDEO DIALOGEX 0, 0, 150, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "XXX",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,26,60,13
+    CONTROL         "XXX",1001,"Button",BS_AUTORADIOBUTTON,22,48,60,13
+    CONTROL         "3 x 3",1002,"Button",BS_AUTORADIOBUTTON,22,70,60,13
+    CONTROL         "XXX",1003,"Button",BS_AUTORADIOBUTTON,22,92,60,13
+    GROUPBOX        "XXX",1050,10,9,77,107,WS_GROUP
+    DEFPUSHBUTTON   "XXX",IDOK,97,15,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,97,39,44,17
+END
+
+IDD_EFFECT_FILLGRID DIALOGEX 0, 0, 212, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,157,15,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,157,43,44,17
+    PUSHBUTTON      "",1000,30,21,21,21
+    PUSHBUTTON      "",1001,73,21,21,21
+    RTEXT           "XXX",1005,21,59,38,12
+    EDITTEXT        1002,67,55,33,15,ES_NUMBER
+    RTEXT           "XXX",1200,13,85,47,10
+    PUSHBUTTON      "",1202,64,82,50,14
+    LTEXT           "999",1201,117,85,18,10
+    GROUPBOX        "",IDC_STATIC,7,4,138,104
+END
+
+IDD_EFFECT_BLINDS DIALOGEX 0, 0, 222, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,90,110,52,17
+    PUSHBUTTON      "XXX",IDCANCEL,152,110,50,17
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,5,14,35,10
+    CONTROL         "Slider1",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,45,10,141,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,190,14,19,10
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,5,39,35,10
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,45,35,141,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,190,39,19,10
+    CONTROL         "XXX",2000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,39,70,47,13
+    CONTROL         "XXX",2001,"Button",BS_AUTORADIOBUTTON,93,70,47,13
+    GROUPBOX        "",IDC_STATIC,14,57,134,34,WS_GROUP
+    PUSHBUTTON      "",2100,175,68,18,17
+    GROUPBOX        "",IDC_STATIC,162,57,44,34,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,101,208,5
+    LTEXT           "Set width to 2 is scan line effect",IDC_STATIC,21,140,185,16
+END
+
+IDD_EFFECT_SUPERNOVA DIALOGEX 0, 0, 200, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",2100,5,5,138,138,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "XXX",IDOK,150,14,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,150,38,44,17
+    PUSHBUTTON      "",2101,161,114,21,21,NOT WS_TABSTOP
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,6,155,30,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,38,152,133,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,172,155,22,12
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,6,180,30,12
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,38,176,133,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,172,179,22,12
+END
+
+IDD_EFFECT_LENSFLARE DIALOGEX 0, 0, 200, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",2100,5,5,138,138,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "XXX",IDOK,150,14,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,150,38,44,17
+END
+
+IDD_EFFECT_RIPPLE DIALOGEX 0, 0, 222, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,92,111,52,17
+    PUSHBUTTON      "XXX",IDCANCEL,154,111,50,17
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,15,40,10
+    CONTROL         "Slider1",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,43,11,141,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,185,15,19,10
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,0,41,40,10
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,43,37,141,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,185,41,19,10
+    CONTROL         "XXX",2000,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,74,53,10
+    CONTROL         "XXX",2001,"Button",BS_AUTORADIOBUTTON,124,74,53,10
+    GROUPBOX        "",IDC_STATIC,25,64,170,26,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,102,205,5
+END
+
+IDD_OPEN_IMAGE DIALOGEX 0, 0, 290, 192
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",1119,0,0,178,191,NOT WS_VISIBLE
+    PUSHBUTTON      "",1100,182,8,100,100
+    LTEXT           "XXX",1200,179,120,110,10
+    LTEXT           "XXX",1210,179,138,110,10
+END
+
+IDD_EFFECT_3DGRID DIALOGEX 0, 0, 195, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,142,13,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,142,37,44,17
+    CONTROL         "XXX",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,27,39,13
+    CONTROL         "XXX",1001,"Button",BS_AUTORADIOBUTTON,21,49,39,13
+    CONTROL         "XXX",1002,"Button",BS_AUTORADIOBUTTON,21,71,39,13
+    GROUPBOX        "XXX",2100,10,8,56,90,WS_GROUP
+    CONTROL         "XXX",2000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,87,27,39,13
+    CONTROL         "XXX",2001,"Button",BS_AUTORADIOBUTTON,87,49,39,13
+    CONTROL         "XXX",2002,"Button",BS_AUTORADIOBUTTON,87,71,39,13
+    GROUPBOX        "XXX",2101,76,8,56,90,WS_GROUP
+END
+
+IDD_SINGLE_SLIDER DIALOGEX 0, 0, 230, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,43,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,43,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,13,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,10,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,13,22,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,35,214,5
+END
+
+IDD_EFFECT_SHADOW DIALOGEX 0, 0, 216, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,157,11,48,17
+    PUSHBUTTON      "XXX",IDCANCEL,157,36,48,17
+    GROUPBOX        "XXX",1005,152,68,56,64,WS_GROUP
+    RTEXT           "X",IDC_STATIC,156,89,12,11
+    EDITTEXT        2000,173,86,27,14,ES_CENTER
+    RTEXT           "Y",IDC_STATIC,156,111,12,11
+    EDITTEXT        2001,173,108,27,14,ES_CENTER
+    PUSHBUTTON      "",2100,5,5,138,138,NOT WS_TABSTOP
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,156,48,10
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,49,153,130,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,180,156,20,10
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,0,178,48,10
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,49,175,130,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,180,178,20,10
+    RTEXT           "XXX",IDC_SLIDER_NAME_3,0,200,48,10
+    PUSHBUTTON      "",IDC_SLIDER_3,53,197,126,14
+    CTEXT           "999",IDC_SLIDER_VALUE_3,180,200,20,10
+END
+
+IDD_TWO_SLIDER DIALOGEX 0, 0, 230, 88
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,66,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,66,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,12,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,9,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,12,22,12
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,0,37,47,12
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,33,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,191,36,22,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,58,214,5
+END
+
+IDD_EFFECT_SHARP DIALOGEX 0, 0, 146, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,90,13,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,90,40,44,17
+    CONTROL         "XXX",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,27,46,13
+    CONTROL         "XXX",1001,"Button",BS_AUTORADIOBUTTON,22,50,46,13
+    CONTROL         "XXX",1002,"Button",BS_AUTORADIOBUTTON,22,73,46,13
+    GROUPBOX        "XXX",1050,10,8,69,90,WS_GROUP
+END
+
+IDD_EFFECT_COLOR_TONE DIALOGEX 0, 0, 208, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,83,80,52,17
+    PUSHBUTTON      "XXX",IDCANCEL,144,80,50,17
+    RTEXT           "XXX",1000,5,16,37,12
+    PUSHBUTTON      "",1200,47,13,141,14
+    RTEXT           "XXX",1001,5,47,37,12
+    PUSHBUTTON      "",1201,47,43,141,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,70,189,5
+END
+
+IDD_EFFECT_NOISIFY DIALOGEX 0, 0, 230, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,43,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,43,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,13,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,10,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,13,22,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,35,214,5
+    CONTROL         "XXX",1000,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,44,65,13
+END
+
+IDD_EFFECT_TEXTURE DIALOGEX 0, 0, 230, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,144,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,144,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,12,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,9,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,12,22,12
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,0,37,47,12
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,33,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,191,36,22,12
+    CONTROL         "XXX",2000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,31,69,50,13
+    CONTROL         "XXX",2001,"Button",BS_AUTORADIOBUTTON,92,69,50,13
+    CONTROL         "XXX",2002,"Button",BS_AUTORADIOBUTTON,153,69,50,13
+    CONTROL         "XXX",2003,"Button",BS_AUTORADIOBUTTON,31,88,50,13
+    CONTROL         "XXX",2004,"Button",BS_AUTORADIOBUTTON,92,88,50,13
+    CONTROL         "XXX",2005,"Button",BS_AUTORADIOBUTTON,153,88,50,13
+    CONTROL         "XXX",2006,"Button",BS_AUTORADIOBUTTON,31,107,50,13
+    CONTROL         "XXX",2007,"Button",BS_AUTORADIOBUTTON,92,107,50,13
+    CONTROL         "XXX",2008,"Button",BS_AUTORADIOBUTTON,153,107,50,13
+    GROUPBOX        "",IDC_STATIC,17,58,195,70,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,136,214,5
+END
+
+IDD_EFFECT_OILPAINT DIALOGEX 0, 0, 230, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,85,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,85,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,13,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,10,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,13,22,12
+    CONTROL         "XXX",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,40,48,47,13
+    CONTROL         "XXX",1001,"Button",BS_AUTORADIOBUTTON,99,48,47,13
+    CONTROL         "XXX",1002,"Button",BS_AUTORADIOBUTTON,158,48,47,13
+    GROUPBOX        "XXX",1050,11,35,206,34,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,77,214,5
+END
+
+IDD_EFFECT_COLOR_BALANCE DIALOGEX 0, 0, 216, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,90,149,53,16
+    PUSHBUTTON      "XXX",IDCANCEL,150,149,53,16
+    RTEXT           "XXX",2200,0,14,33,10
+    PUSHBUTTON      "",3000,38,12,140,12
+    LTEXT           "XXX",2201,183,14,30,10
+    CTEXT           "0",3500,93,2,30,10
+    RTEXT           "XXX",2202,0,39,33,10
+    PUSHBUTTON      "",3001,38,37,140,12
+    LTEXT           "XXX",2203,183,39,30,10
+    CTEXT           "0",3501,93,27,30,10
+    RTEXT           "XXX",2204,0,64,33,10
+    PUSHBUTTON      "",3002,38,62,140,12
+    LTEXT           "XXX",2205,183,64,30,10
+    CTEXT           "0",3502,93,52,30,10
+    CONTROL         "XXX",2000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,31,96,50,13
+    CONTROL         "XXX",2001,"Button",BS_AUTORADIOBUTTON,86,96,50,13
+    CONTROL         "XXX",2002,"Button",BS_AUTORADIOBUTTON,147,96,50,13
+    CONTROL         "XXX",2100,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,113,116,11
+    GROUPBOX        "",IDC_STATIC,11,84,192,48,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,6,141,204,5
+END
+
+IDD_EFFECT_EMBOSS DIALOGEX 0, 0, 174, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,122,15,44,17
+    PUSHBUTTON      "XXX",IDCANCEL,122,39,44,17
+    CONTROL         "XXX",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,71,42,35,13
+    CONTROL         "XXX",1001,"Button",BS_AUTORADIOBUTTON,49,22,45,13
+    CONTROL         "XXX",1002,"Button",BS_AUTORADIOBUTTON,21,42,40,13
+    CONTROL         "XXX",1003,"Button",BS_AUTORADIOBUTTON,49,60,45,13
+    GROUPBOX        "XXX",1050,9,8,103,75,WS_GROUP
+END
+
+IDD_EFFECT_COLOR_LEVEL DIALOGEX 0, 0, 222, 229
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,97,206,53,16
+    PUSHBUTTON      "XXX",IDCANCEL,157,206,53,16
+    RTEXT           "XXX",1212,73,9,72,8
+    COMBOBOX        1200,148,6,63,78,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",1210,6,22,210,108
+    PUSHBUTTON      "",1201,17,39,188,88
+    GROUPBOX        "",1211,6,139,210,52
+    PUSHBUTTON      "",1202,17,156,188,32
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,198,204,5
+END
+
+IDD_THREE_SLIDER DIALOGEX 0, 0, 230, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XXX"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "XXX",IDOK,110,90,50,15
+    PUSHBUTTON      "XXX",IDCANCEL,166,90,50,15
+    RTEXT           "XXX",IDC_SLIDER_NAME_1,0,12,47,12
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,9,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_1,191,12,22,12
+    RTEXT           "XXX",IDC_SLIDER_NAME_2,0,37,47,12
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,33,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_2,191,36,22,12
+    RTEXT           "XXX",IDC_SLIDER_NAME_3,0,61,47,12
+    CONTROL         "",IDC_SLIDER_3,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,50,57,140,17
+    CTEXT           "999",IDC_SLIDER_VALUE_3,191,60,22,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,82,214,5
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "PhoXo"
+            VALUE "FileDescription", "002"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "002.exe"
+            VALUE "LegalCopyright", "(c) PhoXo.  All rights reserved."
+            VALUE "OriginalFilename", "002.exe"
+            VALUE "ProductName", "002.exe"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// INI
+//
+
+IDR_LANGUAGE_FILE       INI                     "res\\lang.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EFFECT_BLINDS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "002"
+    IDR_My002TYPE           "\nMy002\n002\n\n\nMy002.Document\n002.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "002"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_HOME            "Home\nHome"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ACTUAL          "Actual View\nActual View"
+    ID_VIEW_ZOOMIN_STEP     "Zoom In\nZoom In"
+    ID_VIEW_ZOOMOUT_STEP    "Zoom Out\nZoom Out"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR1           "                                                         "
+    ID_INDICATOR2           "                                                     "
+    ID_INDICATOR_ZOOM       "                              "
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\My002.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

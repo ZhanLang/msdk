@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE database [
+<!ELEMENT database (Metatable*)>
+<!ELEMENT array-element ANY>
+<!ELEMENT ref EMPTY>
+<!ATTLIST ref id CDATA #REQUIRED>
+]>
+<database>
+</database>

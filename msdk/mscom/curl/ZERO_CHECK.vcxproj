@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{65961CB6-4415-324A-885A-14C2690F2B2A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\33a06bcb92ffe1e87729446e85bf09ce\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeFiles/33a06bcb92ffe1e87729446e85bf09ce/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeFiles/33a06bcb92ffe1e87729446e85bf09ce/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeFiles/33a06bcb92ffe1e87729446e85bf09ce/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/svn/maguojun/win/msdk/msdk/mscom/curl -BG:/svn/maguojun/win/msdk/msdk/mscom/curl --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/curl/CMakeFiles/33a06bcb92ffe1e87729446e85bf09ce/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\CurlSymbolHiding.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\FindLibSSH2.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Macros.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\OtherTests.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Platforms\WindowsCache.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMake\Utilities.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\3.7.0\CMakeSystem.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\CTestConfig.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\curl-config.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\include\curl\curlbuild.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\curl_config.h.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\libcurl.pc.in;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\Makefile.inc.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\curl\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\lib\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\src\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\data\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\libtest\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\server\CMakeFiles\generate.stamp;G:\svn\maguojun\win\msdk\msdk\mscom\curl\tests\unit\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

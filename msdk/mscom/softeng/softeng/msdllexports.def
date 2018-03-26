@@ -1,0 +1,9 @@
+
+
+EXPORTS
+	CreateSoftEng     = CreateSoftEng		PRIVATE
+	DestorySoftEng   = DestorySoftEng	PRIVATE
+	DllCanUnloadNow     = MSDllCanUnloadNow		PRIVATE
+	DllGetClassObject   = MSDllGetClassObject	PRIVATE
+	DllRegisterServer   = MSDllRegisterServer	PRIVATE
+	DllUnregisterServer = MSDllUnregisterServer	PRIVATE

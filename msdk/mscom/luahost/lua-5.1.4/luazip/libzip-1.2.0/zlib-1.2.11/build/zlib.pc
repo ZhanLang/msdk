@@ -1,0 +1,13 @@
+prefix=G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/zlib-1.2.11/build
+exec_prefix=G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/zlib-1.2.11/build
+libdir=G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/zlib-1.2.11/build/lib
+sharedlibdir=G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/zlib-1.2.11/build/lib
+includedir=G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/zlib-1.2.11/build/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,7 @@
+; main.def : 定义模块参数。
+
+LIBRARY      "fastdb.DLL"
+
+EXPORTS
+
+	test_main		PRIVATE

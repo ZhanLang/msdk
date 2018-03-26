@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{fc260093-d20f-4946-8559-f26931e30cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DuiCore">
+      <UniqueIdentifier>{e9b9386d-3ee8-41b3-b152-b88e90e8fb87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DuiCtrl">
+      <UniqueIdentifier>{e1bab2b3-035a-4fd6-8ff9-0f8d5b88647b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DuiImpl">
+      <UniqueIdentifier>{aea60edc-775c-4d6f-a699-95bd26e91eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\CtrlImpl">
+      <UniqueIdentifier>{b341f199-558c-4307-b32f-aaa9147dff2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skin">
+      <UniqueIdentifier>{8680a208-0bf0-4ae3-b491-840564c67882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{49d84561-5309-400c-b8e5-01d00e055607}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiApi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiAnime.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiBuilder.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiCore.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiEvent.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiSkin.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiCriticalsection.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiObjectFactoryRegistHelp.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiControlCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiContainerCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiStream.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiByteStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiSkinZipResource.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiSkinFile.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiSkinZip.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiFont.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiLang.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiLang.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiLangSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiObjectBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiControlCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiLangText.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiMap.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiPoint.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiRect.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiSize.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiString.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiVector.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiSkinBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCore\IDuiImage.h">
+      <Filter>include\DuiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiWindowCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiContainerCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiRenderEngine.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiVerticalLayoutCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiWindowCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiHorizontalLayoutCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiHorizontalLayoutCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiVerticalLayoutCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiButtonCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiLabelCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiButtonCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiLableCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiColor.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiRenderClip.h">
+      <Filter>include\DuiImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiEditCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiOptionCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiProgressCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiTextCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiEditCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiOptionCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiProgressCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiTextCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiTabLayoutCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiTabLayoutCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiGroupCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiGroupCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiGifCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiPictureCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiPictureCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiImpl\DuiGifImage.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiGifCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiScrollCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiHorizontalScrollCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiScrollCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiVerticalScrollCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiHostWindowCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiThemeCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CtrlImpl\DuiRichEditCtrl.h">
+      <Filter>include\CtrlImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DuiCtrl\IDuiRichEditCtrl.h">
+      <Filter>include\DuiCtrl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiByteStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiSkinZipResource.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiSkinFile.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiSkinZip.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiLang.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiLangSet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiObjectBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiLangText.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

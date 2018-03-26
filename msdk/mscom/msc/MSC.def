@@ -1,0 +1,8 @@
+LIBRARY	MSC
+
+EXPORTS
+	MSC_Initialize
+	MSC_Uninitialize
+	MSC_Start
+	MSC_Stop
+	MSC_CreateMSCProxy

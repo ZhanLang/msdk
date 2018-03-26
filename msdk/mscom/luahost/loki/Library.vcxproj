@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CBDB8E7A-4286-4AE3-A190-BA33D7C53FF0}</ProjectGuid>
+    <RootNamespace>Library</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>loki</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(code_dir)\msdk\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(code_dir)\msdk\lib</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\luahost\;$(code_dir)\msdk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LOKI_STATIC;_STLP_USE_STATIC_LIB;_STLP_USE_NEWALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)_d$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\luahost\;$(code_dir)\msdk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;LOKI_STATIC;_STLP_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)_r$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\loki\AbstractFactory.h" />
+    <ClInclude Include="..\include\loki\AssocVector.h" />
+    <ClInclude Include="..\include\loki\CachedFactory.h" />
+    <ClInclude Include="..\include\loki\Checker.h" />
+    <ClInclude Include="..\include\loki\CheckReturn.h" />
+    <ClInclude Include="..\include\loki\ConstPolicy.h" />
+    <ClInclude Include="..\include\loki\DataGenerators.h" />
+    <ClInclude Include="..\include\loki\EmptyType.h" />
+    <ClInclude Include="..\include\loki\Factory.h" />
+    <ClInclude Include="..\include\loki\Function.h" />
+    <ClInclude Include="..\include\loki\Functor.h" />
+    <ClInclude Include="..\include\loki\HierarchyGenerators.h" />
+    <ClInclude Include="..\include\loki\LevelMutex.h" />
+    <ClInclude Include="..\include\loki\LockingPtr.h" />
+    <ClInclude Include="..\include\loki\LokiExport.h" />
+    <ClInclude Include="..\include\loki\LokiTypeInfo.h" />
+    <ClInclude Include="..\include\loki\MultiMethods.h" />
+    <ClInclude Include="..\include\loki\NullType.h" />
+    <ClInclude Include="..\include\loki\OrderedStatic.h" />
+    <ClInclude Include="..\include\loki\Pimpl.h" />
+    <ClInclude Include="..\include\loki\RefToValue.h" />
+    <ClInclude Include="..\include\loki\SafeFormat.h" />
+    <ClInclude Include="..\include\loki\ScopeGuard.h" />
+    <ClInclude Include="..\include\loki\Sequence.h" />
+    <ClInclude Include="..\include\loki\Singleton.h" />
+    <ClInclude Include="..\include\loki\SmallObj.h" />
+    <ClInclude Include="..\include\loki\SmartPtr.h" />
+    <ClInclude Include="..\include\loki\static_check.h" />
+    <ClInclude Include="..\include\loki\StrongPtr.h" />
+    <ClInclude Include="..\include\loki\Threads.h" />
+    <ClInclude Include="..\include\loki\Tuple.h" />
+    <ClInclude Include="..\include\loki\Typelist.h" />
+    <ClInclude Include="..\include\loki\TypelistMacros.h" />
+    <ClInclude Include="..\include\loki\TypeManip.h" />
+    <ClInclude Include="..\include\loki\TypeTraits.h" />
+    <ClInclude Include="..\include\loki\Visitor.h" />
+    <ClInclude Include="include\loki\flex\allocatorstringstorage.h" />
+    <ClInclude Include="include\loki\flex\cowstringopt.h" />
+    <ClInclude Include="include\loki\flex\flex_string.h" />
+    <ClInclude Include="include\loki\flex\flex_string_details.h" />
+    <ClInclude Include="include\loki\flex\flex_string_shell.h" />
+    <ClInclude Include="include\loki\flex\simplestringstorage.h" />
+    <ClInclude Include="include\loki\flex\smallstringopt.h" />
+    <ClInclude Include="include\loki\flex\vectorstringstorage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LevelMutex.cpp" />
+    <ClCompile Include="OrderedStatic.cpp" />
+    <ClCompile Include="SafeFormat.cpp" />
+    <ClCompile Include="Singleton.cpp" />
+    <ClCompile Include="SmallObj.cpp" />
+    <ClCompile Include="SmartPtr.cpp" />
+    <ClCompile Include="StrongPtr.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDynamic|Win32">
+      <Configuration>DebugDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugStatic|Win32">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDynamic|Win32">
+      <Configuration>ReleaseDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|Win32">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>curlpp</ProjectName>
+    <ProjectGuid>{DD2D30B5-B2CB-4DBC-9BA5-039F8CF7D087}</ProjectGuid>
+    <RootNamespace>curlpp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(code_dir)\msdk\bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">$(code_dir)\msdk\bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\curlpp;$(code_dir)\msdk\include\;.\;include\curlpp;include;$(BOOST_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;BUILDING_CURLPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(LIBCURL_PATH)\include;.\;include\curlpp;include;$(BOOST_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CURLPP_STATICLIB;BUILDING_CURLPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)curlpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\curlpp;$(code_dir)\msdk\include\;.\;include\curlpp;include;$(BOOST_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;BUILDING_CURLPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(LIBCURL_PATH)\include;.\;include\curlpp;include;$(BOOST_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;_LIB;CURLPP_STATICLIB;BUILDING_CURLPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)curlpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\curlpp\cURLpp.cpp" />
+    <ClCompile Include="src\curlpp\Easy.cpp" />
+    <ClCompile Include="src\curlpp\Exception.cpp" />
+    <ClCompile Include="src\curlpp\Form.cpp" />
+    <ClCompile Include="src\curlpp\Info.cpp" />
+    <ClCompile Include="src\curlpp\Infos.cpp" />
+    <ClCompile Include="src\curlpp\Multi.cpp" />
+    <ClCompile Include="src\curlpp\Option.cpp" />
+    <ClCompile Include="src\curlpp\OptionBase.cpp" />
+    <ClCompile Include="src\curlpp\Options.cpp" />
+    <ClCompile Include="src\curlpp\internal\CurlHandle.cpp" />
+    <ClCompile Include="src\curlpp\internal\OptionList.cpp" />
+    <ClCompile Include="src\curlpp\internal\OptionSetter.cpp" />
+    <ClCompile Include="src\curlpp\internal\SList.cpp" />
+    <ClCompile Include="src\utilspp\LifetimeLibrary.cpp" />
+    <ClCompile Include="src\utilspp\PrivateMembers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\curlpp\autolink.h" />
+    <ClInclude Include="include\curlpp\config.win32.h" />
+    <ClInclude Include="include\curlpp\cURLpp.hpp" />
+    <ClInclude Include="include\curlpp\Easy.hpp" />
+    <ClInclude Include="include\curlpp\Exception.hpp" />
+    <ClInclude Include="include\curlpp\Form.hpp" />
+    <ClInclude Include="include\curlpp\Info.hpp" />
+    <ClInclude Include="include\curlpp\Infos.hpp" />
+    <ClInclude Include="include\curlpp\Multi.hpp" />
+    <ClInclude Include="include\curlpp\Option.hpp" />
+    <ClInclude Include="include\curlpp\OptionBase.hpp" />
+    <ClInclude Include="include\curlpp\Options.hpp" />
+    <ClInclude Include="include\curlpp\Types.hpp" />
+    <ClInclude Include="include\curlpp\internal\buildconfig.h" />
+    <ClInclude Include="include\curlpp\internal\CurlHandle.hpp" />
+    <ClInclude Include="include\curlpp\internal\global.h" />
+    <ClInclude Include="include\curlpp\internal\OptionContainer.hpp" />
+    <ClInclude Include="include\curlpp\internal\OptionContainerType.hpp" />
+    <ClInclude Include="include\curlpp\internal\OptionList.hpp" />
+    <ClInclude Include="include\curlpp\internal\OptionSetter.hpp" />
+    <ClInclude Include="include\curlpp\internal\SList.hpp" />
+    <ClInclude Include="include\utilspp\functor\Binder.hpp" />
+    <ClInclude Include="include\utilspp\clone_ptr.hpp" />
+    <ClInclude Include="include\utilspp\singleton\CreationStatic.hpp" />
+    <ClInclude Include="include\utilspp\singleton\CreationUsingNew.hpp" />
+    <ClInclude Include="include\utilspp\EmptyType.hpp" />
+    <ClInclude Include="include\utilspp\functor\Functor.hpp" />
+    <ClInclude Include="include\utilspp\functor\FunctorHandler.hpp" />
+    <ClInclude Include="include\utilspp\functor\FunctorImpl.hpp" />
+    <ClInclude Include="include\utilspp\Functors.hpp" />
+    <ClInclude Include="include\utilspp\singleton\LifetimeDefault.hpp" />
+    <ClInclude Include="include\utilspp\singleton\LifetimeLibrary.hpp" />
+    <ClInclude Include="include\utilspp\singleton\LifetimeWithLongevity.hpp" />
+    <ClInclude Include="include\utilspp\functor\MemFunHandler.hpp" />
+    <ClInclude Include="include\utilspp\NonCopyable.hpp" />
+    <ClInclude Include="include\utilspp\NullType.hpp" />
+    <ClInclude Include="include\utilspp\singleton\PrivateMembers.hpp" />
+    <ClInclude Include="include\utilspp\Singleton.hpp" />
+    <ClInclude Include="include\utilspp\singleton\SingletonHolder.hpp" />
+    <ClInclude Include="include\utilspp\SmartPtr.hpp" />
+    <ClInclude Include="include\utilspp\ThreadingFactoryMutex.hpp" />
+    <ClInclude Include="include\utilspp\ThreadingSingle.hpp" />
+    <ClInclude Include="include\utilspp\TypeList.hpp" />
+    <ClInclude Include="include\utilspp\TypeTrait.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\curlpp\Easy.inl" />
+    <None Include="include\curlpp\Info.inl" />
+    <None Include="include\curlpp\Option.inl" />
+    <None Include="include\curlpp\internal\CurlHandle.inl" />
+    <None Include="include\curlpp\internal\OptionContainer.inl" />
+    <None Include="include\curlpp\internal\OptionSetter.inl" />
+    <None Include="include\utilspp\singleton\CreationStatic.inl" />
+    <None Include="include\utilspp\singleton\CreationUsingNew.inl" />
+    <None Include="include\utilspp\singleton\LifetimeDefault.inl" />
+    <None Include="include\utilspp\singleton\LifetimeLibrary.inl" />
+    <None Include="include\utilspp\singleton\LifetimeWithLongevity.inl" />
+    <None Include="include\utilspp\singleton\PrivateMembers.inl" />
+    <None Include="include\utilspp\singleton\SingletonHolder.inl" />
+    <None Include="include\utilspp\ThreadingFactoryMutex.inl" />
+    <None Include="include\utilspp\ThreadingSingle.inl" />
+    <None Include="README.win32" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

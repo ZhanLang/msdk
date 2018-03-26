@@ -1,0 +1,186 @@
+#include "StdAfx.h"
+#include "CXCredit.h"
+#include "SHA_1.h"
+
+/*
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+static R_RSA_PUBLIC_KEY PUBLIC_KEY =
+{
+	512,
+	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0xc8,0xd9,0x31,0x60,0xa3,0x4c,0xc5,0xb2,
+	 0x56,0x76,0xe1,0x3d,0x89,0x9a,0xa8,0xfb,0xb2,0x08,0x3b,0x60,
+	 0x68,0xfb,0x47,0x32,0x93,0x56,0x7d,0x58,0x31,0xae,0x5c,0xea,
+	 0xd3,0x51,0x9c,0xdb,0xe7,0x4e,0x79,0x73,0x83,0x9c,0xb3,0x80,
+	 0x2c,0xce,0x37,0x00,0x45,0x9d,0xcf,0xf4,0x30,0x53,0x14,0xc5,
+	 0x6c,0xaa,0xab,0x1c,0x0a,0x77,0xf9,0xbd},
+	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+	 0x00,0x00,0x00,0x00,0x00,0x01,0x00,0x01}
+};
+
+/////////////////////////////////////////////////////////////////////////////
+BOOL CXCredit::VerifySignature(R_RSA_PUBLIC_KEY* publicKey)
+{
+	if (dwMagic != 1701538125)
+	{
+		return FALSE;
+	}
+
+    BYTE lpDstBuffer[20];
+    SHA1(lpDstBuffer);
+
+    if (bDotNet)
+    {
+        return IsMatch(lpCreditData, lpDstBuffer);
+    }
+    else
+    {
+        if (NULL == publicKey)
+        {
+            publicKey = &PUBLIC_KEY;
+        }
+
+        BYTE lpSrcBuffer[128];
+        DWORD dwLen = 128;
+        INT iResult = RSAPublicDecrypt(lpSrcBuffer, (unsigned int*)&dwLen, lpCreditData, 64, publicKey);
+        if (iResult != 0 || dwLen > 20)
+        {
+            return FALSE;
+        }
+
+        return IsMatch(lpSrcBuffer, lpDstBuffer);
+    }	
+}
+
+/////////////////////////////////////////////////////////////////////////////
+VOID CXCredit::MakeSignature(R_RSA_PRIVATE_KEY* privateKey)
+{
+	BYTE lpBuffer[20];
+	SHA1(lpBuffer);
+
+	DWORD dwLen = 64;
+	INT iResult = RSAPrivateEncrypt(lpCreditData, (unsigned int*)&dwLen, lpBuffer, 20, privateKey);
+	_ASSERT(0 == iResult);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+DWORD CXCredit::ProcessID()
+{
+	return dwProcessID;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+DWORD CXCredit::ThreadID()
+{
+	return dwThreadID;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+DWORD CXCredit::ConnectTime()
+{
+	return dwConnectTime;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+DWORD CXCredit::SubSystemID()
+{
+	return dwSubSystemID;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+BOOL CXCredit::DotNet()
+{
+    return bDotNet;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+DWORD CXCredit::DataLen()
+{
+	return dwDataLen;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+LPBYTE CXCredit::Data()
+{
+	return (LPBYTE)(this + 1);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+BOOL CXCredit::IsExpire(DWORD dwAcceptTime)
+{
+	if (dwConnectTime < dwAcceptTime)
+	{
+#ifndef _DEBUG 
+		if (dwConnectTime + XCREDIT_EXPIRE < dwAcceptTime)
+		{
+			return TRUE;
+		}
+#endif
+		return FALSE;
+	}
+
+	if (dwConnectTime - dwAcceptTime > XCREDIT_EXPIRE)
+	{
+		return TRUE;
+	}
+
+	return FALSE;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+VOID CXCredit::Initlize(DWORD dwProcessID, DWORD dwThreadID, DWORD dwSubSystemID, DWORD dwBufferLen)
+{
+	
+	this->dwProcessID   = dwProcessID;
+	this->dwThreadID    = dwThreadID;
+	this->dwConnectTime = GetTickCount();
+	this->dwMagic       = 1701538125;
+	this->dwSubSystemID = dwSubSystemID;
+	this->dwReserve1    = 0;
+	this->dwReserve2    = 0;
+    this->bDotNet       = FALSE;
+	this->dwDataLen     = dwBufferLen - sizeof(XCredit);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+VOID CXCredit::SHA1(BYTE lpBuffer[20])
+{
+	sha1_context shaContext;
+	sha1_starts(&shaContext);
+	sha1_update(&shaContext, (uint8*)&dwProcessID, (dwDataLen + sizeof(XCredit) - 64));
+	sha1_finish(&shaContext, lpBuffer);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+BOOL CXCredit::IsMatch(BYTE lpSrcBuffer[20], BYTE lpDstBuffer[20])
+{
+	for (DWORD i = 0; i < 20; i++)
+	{
+		if (lpSrcBuffer[i] != lpDstBuffer[i])
+		{
+			return FALSE;
+		}
+	}
+
+	return TRUE;
+}

@@ -1,0 +1,14 @@
+TARGETNAME=vdisk
+TARGETTYPE=DRIVER
+
+MSC_WARNING_LEVEL=/W4 /WX
+
+TARGETLIBS=$(TARGETLIBS) \
+           $(DDK_LIB_PATH)\ntstrsafe.lib
+
+_NT_TARGET_VERSION = $(_NT_TARGET_VERSION_WINXP)
+
+SOURCES=vdisk.c \
+		aes.c \
+        dyndisk.c \
+        fops-ntdrv.c

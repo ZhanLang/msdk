@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5CEE1B8C-F372-351F-AB2C-6066F0FCF215}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeRCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckSymbolExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckTypeSize.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFile.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFileCXX.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceRuns.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckStructHasMember.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\TestBigEndian.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindZLIB.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\SelectLibraryConfigurations.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-config.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-zipconf.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeRCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckSymbolExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckTypeSize.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFile.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFileCXX.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceRuns.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckStructHasMember.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\TestBigEndian.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindZLIB.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\SelectLibraryConfigurations.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-config.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-zipconf.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeRCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckSymbolExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckTypeSize.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFile.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFileCXX.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceRuns.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckStructHasMember.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\TestBigEndian.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindZLIB.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\SelectLibraryConfigurations.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-config.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-zipconf.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+G:\cmake-3.5.2-win32-x86\bin\cmake.exe -HG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0 -BG:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build --check-stamp-file G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\3.5.2\CMakeRCCompiler.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckFunctionExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckSymbolExists.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckTypeSize.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFile.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckIncludeFileCXX.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceRuns.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckStructHasMember.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\TestBigEndian.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindZLIB.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\SelectLibraryConfigurations.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;G:\cmake-3.5.2-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-config.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\cmake-zipconf.h.in;G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\svn\maguojun\win\msdk\msdk\mscom\luahost\lua-5.1.4\libzip-1.2.0\build\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/ZERO_CHECK.vcxproj">
+      <Project>B040ECA8-2191-3BF0-9F44-169B1380B28D</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/regress/add_from_filep.vcxproj">
+      <Project>39D2BD03-37B0-3EE7-83C1-7F4444D77C9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/regress/fopen_unchanged.vcxproj">
+      <Project>B69C859C-0566-3AC8-95B4-7210F19A6600</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/regress/fread.vcxproj">
+      <Project>B70B33FA-E8DA-34B1-9CDA-CB8124EF0B54</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/regress/fseek.vcxproj">
+      <Project>6892DD78-C58B-3611-9720-9CCC86C3612F</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/src/hole.vcxproj">
+      <Project>3D945EF6-0497-3256-A0C5-2C83E3ACEEF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/examples/in-memory.vcxproj">
+      <Project>C406C6C7-D2B3-3A9B-B997-39028AFEBDBE</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/regress/tryopen.vcxproj">
+      <Project>BA0B0502-4685-3683-96F3-A5C4CC5A9490</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/lib/zip.vcxproj">
+      <Project>1A1A0547-8D6F-3709-82CD-F73E7F13FE39</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/src/zipcmp.vcxproj">
+      <Project>23191EA3-0BCE-3B68-A7FE-9F9FF4D94ACF</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/src/zipmerge.vcxproj">
+      <Project>47E2FC44-E2EC-338E-8D25-B8A9C1B62154</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/svn/maguojun/win/msdk/msdk/mscom/luahost/lua-5.1.4/libzip-1.2.0/build/src/ziptool.vcxproj">
+      <Project>60B62818-A460-3E63-A0BA-353A3A57BE6A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

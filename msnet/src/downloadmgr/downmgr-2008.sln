@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bvdownload", "bvdownload\bvdownload.vcxproj", "{919E4F85-847E-48B4-AB6B-1D275DD5C7CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InetFile", "InetFile\InetFile vc9.0.vcxproj", "{281543A7-5226-49AD-BF93-E5B89D5F678B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "downmgr", "downmgr\downmgr-vc9.vcxproj", "{755DBEA2-F95F-4A82-984B-22234DD1B4D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "httpdownload", "httpdownload\httpdownload.vcproj", "{B1FE9C9B-D124-4959-9E76-E155A97023A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{919E4F85-847E-48B4-AB6B-1D275DD5C7CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{919E4F85-847E-48B4-AB6B-1D275DD5C7CD}.Debug|Win32.Build.0 = Debug|Win32
+		{919E4F85-847E-48B4-AB6B-1D275DD5C7CD}.Release|Win32.ActiveCfg = Release|Win32
+		{919E4F85-847E-48B4-AB6B-1D275DD5C7CD}.Release|Win32.Build.0 = Release|Win32
+		{281543A7-5226-49AD-BF93-E5B89D5F678B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{281543A7-5226-49AD-BF93-E5B89D5F678B}.Debug|Win32.Build.0 = Debug|Win32
+		{281543A7-5226-49AD-BF93-E5B89D5F678B}.Release|Win32.ActiveCfg = Release|Win32
+		{281543A7-5226-49AD-BF93-E5B89D5F678B}.Release|Win32.Build.0 = Release|Win32
+		{755DBEA2-F95F-4A82-984B-22234DD1B4D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{755DBEA2-F95F-4A82-984B-22234DD1B4D0}.Debug|Win32.Build.0 = Debug|Win32
+		{755DBEA2-F95F-4A82-984B-22234DD1B4D0}.Release|Win32.ActiveCfg = Release|Win32
+		{755DBEA2-F95F-4A82-984B-22234DD1B4D0}.Release|Win32.Build.0 = Release|Win32
+		{B1FE9C9B-D124-4959-9E76-E155A97023A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B1FE9C9B-D124-4959-9E76-E155A97023A6}.Debug|Win32.Build.0 = Debug|Win32
+		{B1FE9C9B-D124-4959-9E76-E155A97023A6}.Release|Win32.ActiveCfg = Release|Win32
+		{B1FE9C9B-D124-4959-9E76-E155A97023A6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

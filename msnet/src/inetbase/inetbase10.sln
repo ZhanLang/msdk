@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inetbase", "inetbase\inetbase.vcxproj", "{05483E44-F537-43B4-987F-033AFE93F618}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inetbasedome", "inetbasedome\inetbasedome.vcxproj", "{88E9B639-6643-4EBA-A378-DF0FE72ADA0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05483E44-F537-43B4-987F-033AFE93F618}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05483E44-F537-43B4-987F-033AFE93F618}.Debug|Win32.Build.0 = Debug|Win32
+		{05483E44-F537-43B4-987F-033AFE93F618}.Release|Win32.ActiveCfg = Release|Win32
+		{05483E44-F537-43B4-987F-033AFE93F618}.Release|Win32.Build.0 = Release|Win32
+		{88E9B639-6643-4EBA-A378-DF0FE72ADA0E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{88E9B639-6643-4EBA-A378-DF0FE72ADA0E}.Debug|Win32.Build.0 = Debug|Win32
+		{88E9B639-6643-4EBA-A378-DF0FE72ADA0E}.Release|Win32.ActiveCfg = Release|Win32
+		{88E9B639-6643-4EBA-A378-DF0FE72ADA0E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

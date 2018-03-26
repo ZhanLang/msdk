@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="dsui">
+      <UniqueIdentifier>{dcf1b17d-bb56-4ce1-8dc1-920062ea8ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{bc9527d7-4816-497f-86e9-9714fa86fe94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{ed83021a-b516-4327-9954-556497bb0e64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsFontMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsActivity.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsBuilder.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsGlobalStateMgr.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsImageEx.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsImageMgr.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsListView.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsPaintMission.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsUIBase.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="dsui\dsUIClassMgr.cpp">
+      <Filter>dsui</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\9squares.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsActivity.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsButton.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsCheckBox.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsFontMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsGifAnimateMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsGlobalStateMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsImageEx.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsImageInfo.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsImageMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsLinkMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsListView.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsNoPaintMsgMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsPaintMission.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsProgress.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsScroll.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsTools.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsToolTip.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsUIBase.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsUIClassInfo.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsUIClassMgr.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\dsUIHeaders.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="dsui\timer.h">
+      <Filter>dsui</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\dsdef.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\dsLayoutInfo.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\dsui.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\dsUIState.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsActivity.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsBuilder.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsButton.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsCheckBox.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsDialog.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsFontMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsImageMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsListView.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsPaintMission.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsProgress.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsScroll.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsUIBase.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IdsWindow.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

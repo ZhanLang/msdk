@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMSCMessageQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Confusion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPipe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXCredit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMSCDispatcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMSCProxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMSCProxyImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMSCProxyThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MSC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MSCHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MSCListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MSCManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsMsc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsXMSCProxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Profile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSCMessageMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSCSubscriberList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSCSubscriberQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SPipe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Subscriber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XMessageBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XMutex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XSynchronization.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMSCMessageQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Confusion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPipe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXCredit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMSCDispatcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMSCProxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMSCProxyImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMSCProxyThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MSC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MSCHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MSCListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MSCManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsMsc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsXMSCProxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSCMessageMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSCSubscriberList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSCSubscriberQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SPipe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Subscriber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XCredit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XMessageBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XMMSC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XMutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XSynchronization.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MSC.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+
+
+EXPORTS
+	DllCanUnloadNow     = MSDllCanUnloadNow		PRIVATE
+	DllGetClassObject   = MSDllGetClassObject	PRIVATE
+	DllRegisterServer   = MSDllRegisterServer	PRIVATE
+	DllUnregisterServer = MSDllUnregisterServer	PRIVATE
+	
+	MS_InitializeCallCenter
+	MS_UninitializeCallCenter
+	MS_AllocateCallCenter
+	MS_FreeCallCenter
+	MS_ShutDown

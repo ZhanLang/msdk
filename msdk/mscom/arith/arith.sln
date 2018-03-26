@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblzma", "3rd\liblzma\liblzma.vcxproj", "{EA4851D0-7D69-4ACF-B847-F4CC11DCDF81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7Zip", "7Zip\7Zip.vcxproj", "{6B8EB573-5902-431F-9245-EC53E9A2FCF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7ZipTest", "Test\7ZipTest\7ZipTest.vcxproj", "{86BCA7FD-B827-4E6F-8898-3FF3D600AFB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4851D0-7D69-4ACF-B847-F4CC11DCDF81}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA4851D0-7D69-4ACF-B847-F4CC11DCDF81}.Debug|Win32.Build.0 = Debug|Win32
+		{EA4851D0-7D69-4ACF-B847-F4CC11DCDF81}.Release|Win32.ActiveCfg = Release|Win32
+		{EA4851D0-7D69-4ACF-B847-F4CC11DCDF81}.Release|Win32.Build.0 = Release|Win32
+		{6B8EB573-5902-431F-9245-EC53E9A2FCF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B8EB573-5902-431F-9245-EC53E9A2FCF2}.Debug|Win32.Build.0 = Debug|Win32
+		{6B8EB573-5902-431F-9245-EC53E9A2FCF2}.Release|Win32.ActiveCfg = Release|Win32
+		{6B8EB573-5902-431F-9245-EC53E9A2FCF2}.Release|Win32.Build.0 = Release|Win32
+		{86BCA7FD-B827-4E6F-8898-3FF3D600AFB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{86BCA7FD-B827-4E6F-8898-3FF3D600AFB9}.Debug|Win32.Build.0 = Debug|Win32
+		{86BCA7FD-B827-4E6F-8898-3FF3D600AFB9}.Release|Win32.ActiveCfg = Release|Win32
+		{86BCA7FD-B827-4E6F-8898-3FF3D600AFB9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

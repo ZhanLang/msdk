@@ -1,0 +1,23 @@
+LIBRARY	"vdisk"
+
+EXPORTS
+	vdisk_init
+	vdisk_uninit
+	vdisk_mount
+	vdisk_umount
+	vdisk_create
+	vdisk_set_user_data
+	vdisk_get_user_data
+	vdisk_get_info
+
+	;vdisk_diskpart_verify
+	;vdisk_diskpart_clear
+
+	vdisk_open
+	vdisk_close
+	vdisk_format
+	vdisk_fopen
+	vdisk_fclose
+	vdisk_fread
+	vdisk_fwrite
+	vdisk_flseek

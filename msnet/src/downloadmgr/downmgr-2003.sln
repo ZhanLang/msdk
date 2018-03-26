@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InetFile", "InetFile\InetFile vc7.0.vcproj", "{F1BA0DC5-87D1-4026-9B1A-5DF8F4789037}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "downmgr", "downmgr\downmgr-vc7.vcproj", "{226510F7-F580-4059-A14F-1563AE4ECBB9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BVDownload", "BVDownload\BVDownload-vc7.0.vcproj", "{D47334B1-C6B3-4F19-B34B-9456DDA4FFFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1BA0DC5-87D1-4026-9B1A-5DF8F4789037}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1BA0DC5-87D1-4026-9B1A-5DF8F4789037}.Debug|Win32.Build.0 = Debug|Win32
+		{F1BA0DC5-87D1-4026-9B1A-5DF8F4789037}.Release|Win32.ActiveCfg = Release|Win32
+		{F1BA0DC5-87D1-4026-9B1A-5DF8F4789037}.Release|Win32.Build.0 = Release|Win32
+		{226510F7-F580-4059-A14F-1563AE4ECBB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{226510F7-F580-4059-A14F-1563AE4ECBB9}.Debug|Win32.Build.0 = Debug|Win32
+		{226510F7-F580-4059-A14F-1563AE4ECBB9}.Release|Win32.ActiveCfg = Release|Win32
+		{226510F7-F580-4059-A14F-1563AE4ECBB9}.Release|Win32.Build.0 = Release|Win32
+		{D47334B1-C6B3-4F19-B34B-9456DDA4FFFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D47334B1-C6B3-4F19-B34B-9456DDA4FFFF}.Debug|Win32.Build.0 = Debug|Win32
+		{D47334B1-C6B3-4F19-B34B-9456DDA4FFFF}.Release|Win32.ActiveCfg = Release|Win32
+		{D47334B1-C6B3-4F19-B34B-9456DDA4FFFF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

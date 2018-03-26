@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D48853C0-8A19-4849-8535-9E8D773EDF07}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>luahost</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\common file\mscom\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\common file\mscom\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LUAHOST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include;$(code_dir)\msapp\include;$(code_dir)\msdk\include\luahost\lua-5.1.4;.\ZipArchive\zlib;$(duilib)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua-5.1.4.lib;mluabind_d.lib;Ws2_32.lib;loki_d.lib;7zip_d.lib;LzmaLib_d.lib;libeay32.lib;DeviceControlLib_d.lib;luasocket_32_d.lib;stdlog.lib;syslay.lib;jsoncpp_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LUAHOST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include;$(code_dir)\msapp\include;$(code_dir)\msdk\include\luahost\lua-5.1.4;.\ZipArchive\zlib;$(duilib)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib;$(code_dir)\msdk\lib</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>lua-5.1.4.lib;mluabind_r.lib;loki_r.lib;LzmaLib_r.lib;libeay32.lib;stdlog.lib;syslay.lib;jsoncpp_r_mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\msdk\include\luahost\ILuaHost.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\LuaHostPluginImpl.h" />
+    <ClInclude Include="BindHttp.h" />
+    <ClInclude Include="leant.h" />
+    <ClInclude Include="logtool.h" />
+    <ClInclude Include="LuaApp.h" />
+    <ClInclude Include="LuaBase64.h" />
+    <ClInclude Include="LuaBindDuilib.h" />
+    <ClInclude Include="luafunc.h" />
+    <ClInclude Include="luahost.h" />
+    <ClInclude Include="LuaLog.h" />
+    <ClInclude Include="LuaVM.h" />
+    <ClInclude Include="l_AppDownload.h" />
+    <ClInclude Include="l_msapp.h" />
+    <ClInclude Include="l_mstime.h" />
+    <ClInclude Include="l_reg.h" />
+    <ClInclude Include="OsInof.h" />
+    <ClInclude Include="ParseCommandToLua.h" />
+    <ClInclude Include="prodinfo.h" />
+    <ClInclude Include="Rc4LuaEx.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ServiceOpt.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringConvert.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vercmp.h" />
+    <ClInclude Include="WinApi.h" />
+    <ClInclude Include="WinDefine_l.h" />
+    <ClInclude Include="WinFileSystems.h" />
+    <ClInclude Include="WinGloble.h" />
+    <ClInclude Include="WinIni.h" />
+    <ClInclude Include="WinPath.h" />
+    <ClInclude Include="WinQuickLink.h" />
+    <ClInclude Include="WinRegKey.h" />
+    <ClInclude Include="WinService.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="logtool.cpp" />
+    <ClCompile Include="LuaApp.cpp" />
+    <ClCompile Include="luahost.cpp" />
+    <ClCompile Include="LuaLog.cpp" />
+    <ClCompile Include="LuaVM.cpp" />
+    <ClCompile Include="OsInof.cpp" />
+    <ClCompile Include="ParseCommandToLua.cpp" />
+    <ClCompile Include="ServiceOpt.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringConvert.cpp" />
+    <ClCompile Include="WinApi.cpp" />
+    <ClCompile Include="WinFileSystems.cpp" />
+    <ClCompile Include="WinIni.cpp" />
+    <ClCompile Include="WinPath.cpp" />
+    <ClCompile Include="WinQuickLink.cpp" />
+    <ClCompile Include="WinRegKey.cpp" />
+    <ClCompile Include="WinService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="luahost.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

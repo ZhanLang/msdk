@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44BD6205-7976-4CF5-8CB4-4F45D793A916}</ProjectGuid>
+    <RootNamespace>lua514</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\luahost\lua-5.1.4;.\luazip\libzip-1.2.0\lib;.\luazip\libzip-1.2.0\build;.\luazip\zziplib-0.13.59;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;PTW32_STATIC_LIB;LUA_BUILD_AS_DLL;LUA_CORE;ZIP_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_d.lib</OutputFile>
+    </Lib>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread_d.lib;Ws2_32.lib;LuaRapidXml_d.lib;zip_d.lib;zlibstaticd.lib;zziplibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;../lib</AdditionalLibraryDirectories>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(code_dir)\msdk\include\luahost\lua-5.1.4;.\luazip\libzip-1.2.0\lib;.\luazip\libzip-1.2.0\build;.\luazip\zziplib-0.13.59;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;PTW32_STATIC_LIB;LUA_BUILD_AS_DLL;LUA_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_r.lib</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>pthread_r.lib;Ws2_32.lib;LuaRapidXml_r.lib;zlibstatic.lib;zziplib.lib;Psapi.lib;Winmm.lib;Kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;../lib</AdditionalLibraryDirectories>
+      <ImportLibrary>$(code_dir)\msdk\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bit.c" />
+    <ClCompile Include="dtoa.c" />
+    <ClCompile Include="g_fmt.c" />
+    <ClCompile Include="lapi.c" />
+    <ClCompile Include="lauxlib.c" />
+    <ClCompile Include="lbaselib.c" />
+    <ClCompile Include="lcode.c" />
+    <ClCompile Include="ldblib.c" />
+    <ClCompile Include="ldebug.c" />
+    <ClCompile Include="ldo.c" />
+    <ClCompile Include="ldump.c" />
+    <ClCompile Include="lfs.c" />
+    <ClCompile Include="lfunc.c" />
+    <ClCompile Include="lgc.c" />
+    <ClCompile Include="linit.c" />
+    <ClCompile Include="liolib.c" />
+    <ClCompile Include="llex.c" />
+    <ClCompile Include="lmathlib.c" />
+    <ClCompile Include="lmem.c" />
+    <ClCompile Include="loadlib.c" />
+    <ClCompile Include="lobject.c" />
+    <ClCompile Include="lopcodes.c" />
+    <ClCompile Include="loslib.c" />
+    <ClCompile Include="lparser.c" />
+    <ClCompile Include="lstate.c" />
+    <ClCompile Include="lstring.c" />
+    <ClCompile Include="lstrlib.c" />
+    <ClCompile Include="ltable.c" />
+    <ClCompile Include="ltablib.c" />
+    <ClCompile Include="ltm.c" />
+    <ClCompile Include="lua-b64.c" />
+    <ClCompile Include="luac.c" />
+    <ClCompile Include="luasys\src\luasys.c" />
+    <ClCompile Include="LuaUnicode\Lua_Unicode.c" />
+    <ClCompile Include="luautf8\lutf8lib.c" />
+    <ClCompile Include="luazip\luazip.c" />
+    <ClCompile Include="lua_cjson.c" />
+    <ClCompile Include="lundump.c" />
+    <ClCompile Include="lvm.c" />
+    <ClCompile Include="lzio.c" />
+    <ClCompile Include="print.c" />
+    <ClCompile Include="strbuf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lapi.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lauxlib.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lcode.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\ldebug.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\ldo.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lfunc.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lgc.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\llex.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\llimits.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lmem.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lobject.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lopcodes.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lparser.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lstate.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lstring.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\ltable.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\ltm.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lua.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\luaconf.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lualib.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lundump.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lvm.h" />
+    <ClInclude Include="..\..\..\msdk\include\luahost\lua-5.1.4\lzio.h" />
+    <ClInclude Include="dtoa_config.h" />
+    <ClInclude Include="fpconv.h" />
+    <ClInclude Include="luasys\src\luasys.h" />
+    <ClInclude Include="LuaUnicode\Lua_Unicode.h" />
+    <ClInclude Include="luautf8\unidata.h" />
+    <ClInclude Include="luazip\luazip.h" />
+    <ClInclude Include="strbuf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

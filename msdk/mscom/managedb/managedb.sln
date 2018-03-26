@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "managedb", "managedb\managedb.vcxproj", "{11C7F0C9-C65D-4610-87EF-E04E023191C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlitedb", "sqlitedb\sqlitedb.vcxproj", "{4D8DD630-55CE-487C-8566-BAEA92AB5D44}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlitesdb", "sqlitesdb\sqlitesdb.vcxproj", "{E29FF695-1A18-40F6-AE8A-5E3B805D2D37}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite", "..\..\msdk\include\database\sqlite\sqlite.vcxproj", "{ABB26B33-215B-4859-8BEE-68149115F09E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlites", "..\..\msdk\include\database\sqlites\sqlites.vcxproj", "{8AEF157D-737B-446E-B47E-421D04C6F353}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_db", "test_db\test_db.vcxproj", "{1C524A89-4E27-49C3-9DDE-90B05B2D7867}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xmlvalue", "..\xmlvalue\xmlvalue.vcxproj", "{95E9D2D0-5592-48AC-B726-64A6C671E0F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C7F0C9-C65D-4610-87EF-E04E023191C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11C7F0C9-C65D-4610-87EF-E04E023191C4}.Debug|Win32.Build.0 = Debug|Win32
+		{11C7F0C9-C65D-4610-87EF-E04E023191C4}.Release|Win32.ActiveCfg = Release|Win32
+		{11C7F0C9-C65D-4610-87EF-E04E023191C4}.Release|Win32.Build.0 = Release|Win32
+		{4D8DD630-55CE-487C-8566-BAEA92AB5D44}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4D8DD630-55CE-487C-8566-BAEA92AB5D44}.Debug|Win32.Build.0 = Debug|Win32
+		{4D8DD630-55CE-487C-8566-BAEA92AB5D44}.Release|Win32.ActiveCfg = Release|Win32
+		{4D8DD630-55CE-487C-8566-BAEA92AB5D44}.Release|Win32.Build.0 = Release|Win32
+		{E29FF695-1A18-40F6-AE8A-5E3B805D2D37}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E29FF695-1A18-40F6-AE8A-5E3B805D2D37}.Debug|Win32.Build.0 = Debug|Win32
+		{E29FF695-1A18-40F6-AE8A-5E3B805D2D37}.Release|Win32.ActiveCfg = Release|Win32
+		{E29FF695-1A18-40F6-AE8A-5E3B805D2D37}.Release|Win32.Build.0 = Release|Win32
+		{ABB26B33-215B-4859-8BEE-68149115F09E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABB26B33-215B-4859-8BEE-68149115F09E}.Debug|Win32.Build.0 = Debug|Win32
+		{ABB26B33-215B-4859-8BEE-68149115F09E}.Release|Win32.ActiveCfg = Release|Win32
+		{ABB26B33-215B-4859-8BEE-68149115F09E}.Release|Win32.Build.0 = Release|Win32
+		{8AEF157D-737B-446E-B47E-421D04C6F353}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AEF157D-737B-446E-B47E-421D04C6F353}.Debug|Win32.Build.0 = Debug|Win32
+		{8AEF157D-737B-446E-B47E-421D04C6F353}.Release|Win32.ActiveCfg = Release|Win32
+		{8AEF157D-737B-446E-B47E-421D04C6F353}.Release|Win32.Build.0 = Release|Win32
+		{1C524A89-4E27-49C3-9DDE-90B05B2D7867}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C524A89-4E27-49C3-9DDE-90B05B2D7867}.Debug|Win32.Build.0 = Debug|Win32
+		{1C524A89-4E27-49C3-9DDE-90B05B2D7867}.Release|Win32.ActiveCfg = Release|Win32
+		{1C524A89-4E27-49C3-9DDE-90B05B2D7867}.Release|Win32.Build.0 = Release|Win32
+		{95E9D2D0-5592-48AC-B726-64A6C671E0F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95E9D2D0-5592-48AC-B726-64A6C671E0F4}.Debug|Win32.Build.0 = Debug|Win32
+		{95E9D2D0-5592-48AC-B726-64A6C671E0F4}.Release|Win32.ActiveCfg = Release|Win32
+		{95E9D2D0-5592-48AC-B726-64A6C671E0F4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

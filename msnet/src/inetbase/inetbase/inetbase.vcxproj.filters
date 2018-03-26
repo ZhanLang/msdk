@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{61cb545b-f28b-49f7-a767-9bbd87477396}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsFtpConnection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsFtpFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsFtpFiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsHTMLParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsHttpConnection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsHttpFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsHttpFiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsinet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsInternetFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsInternetFile2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsInternetFiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsInternetSession.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsLocalFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsMutex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsServerConnection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsSpeaking.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fsURL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inetbase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="INetBaseMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="strparsing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="system.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsFtpConnection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsFtpFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsFtpFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsHTMLParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsHttpConnection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsHttpFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsHttpFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsinet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsInternetFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsInternetFile2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsInternetFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsInternetSession.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsLocalFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsMutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsServerConnection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsSpeaking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fsURL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="INetBaseMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InetFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="strparsing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsFtpFile_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsHttpFile_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsinet_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsInternetFile_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsInternetFiles_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsInternetSession_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsLocalFile_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\fsServerConnection_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\inetbase\inetbase_i.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

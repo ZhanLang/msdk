@@ -1,0 +1,8 @@
+AccessPermission.h
+	基本的权限设置
+
+vistafunc.h
+	进程相关的东西，比如服务创建用户进程
+
+CheckOSAPI.h
+	检查操作系统版本

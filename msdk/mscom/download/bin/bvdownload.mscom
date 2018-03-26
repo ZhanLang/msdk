@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mscomcfg>
+	<moudle guid='{D403DB18-15CB-4E0C-89F5-4D64BBF2C509}'  X86='./bvdownload.dll'>
+		<class clsid='{C50E17A8-85B7-4C83-B0B1-EE19CBB81662}'  progid='CLSID_BvDownload'  name='CLSID_BvDownload'/>
+	</moudle>
+</mscomcfg>

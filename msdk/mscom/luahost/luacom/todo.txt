@@ -1,0 +1,104 @@
+LuaCOM Project
+--------------
+
+1. Urgent BUGS
+2. TODO
+
+--------------------------------------
+1. Urgent Bugs
+--------------------------------------
+
+
+--------------------------------------
+2. TODO
+--------------------------------------
+
+### List 1
+
+- Add LuaCOM course (including how to discover component interfaces)
+
+* Look at implementing new function in Lua for LuaCOM
+	- Make a function to export in HTML the documentation of a type library,
+	  showing how those things can be used with LuaCOM
+	  (for example, showing that propputs and propgets parameters must
+	  be used as functions)
+
+* Implement an automatic generator from IDL to an interface description
+  structured in Lua
+
+- Allow customization of type conversions from Lua -> COM, seja
+  via "type casts", seja via tag method de type conversion
+  - Including automatic conversion of Lua objects to COM objects
+    via tag-typeinfo table
+  - Permitir para que tipo o luacom deve converter um objeto Lua
+    (override do FUNCDESC)
+
+- Implement conversion of a COM object in a Lua table, in case
+  the COM object resides in the same process, thread, or Lua state.
+
+* Allow creation of type libraries using LuaCOM
+
+* Allow implentations of in-process servers.
+
+- BUG: perhaps vbscript has not accepted in-out SAFEARRAYS because
+  LuaCOM always creates zero-based arrays
+
+#### List 2
+
+- Test LuaCOM with free-threaded
+
+- Resolve the problem of the order in which lua_close and OleUninitialize are called
+  - Free everything in luacom_close
+
+- Improve performance
+  - reduce dynamic memory allocation - FUNCDESC's, strings etc
+  - Create a cache of FUNCDESCs, resolving the problem of two objects
+    implicitly created and destroyed
+  - Improve treatment of SAFEARRAYs (change Get and Put element--they are very slow)
+
+- Implement UnRegister, to facilitate tests without leaving garbage in the registry
+
+- Make coverage tests (taking special care with objects without typeinfo)
+
+- Test string2safearray, omission of arguments, functions with out
+  parameters but without return value, test with default parameters,
+  testar passar array com tipo errado para VB (número de um
+  tipo ao invés de outro),
+
+- Find a way to specify /return DATE/TIME with tables
+
+- Allow events generated in LuaCOM to use exit parameters when
+  connection will have only one point.
+
+- Colocar todos os exemplos da documentacao na arvore, para
+  evitar furos (compilá-los)
+
+
+##### List 3
+
+- Allow objects implemented in LuaCOM through HTML pages with
+  VBScript (tem que permitir algum tipo de
+  persistência -- talvez permitir mais de um getObject de
+  cada vez)
+
+- proput parametrizado: não é suportado fazer um propput parametrizado via
+  tLuaDispatch em um campo que não seja tabela (for example, a userdata).
+
+- Implement a generic OLE control based on NativeCanvas
+
+- Test implementation of COM objects using userdatas
+  * Acho que já funciona (tolua)
+
+- Allow more than one connection point
+
+- Implementation of passing/receiving vararg parameters
+  * It seems of small importance
+ 
+- Test using LuaCOM with multiple Lua states
+
+- Allow a client application to obtain the IDispatch pointer of an object
+
+- Acertar property get e put em tLuaDispatch, especialmente no caso dos
+  indexados        
+
+- Remove lua_ref.

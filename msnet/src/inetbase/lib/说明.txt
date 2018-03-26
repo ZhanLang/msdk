@@ -1,0 +1,2 @@
+cURL_lib.lib: release
+	freedownload\trunc\InetFile\cURL_lib

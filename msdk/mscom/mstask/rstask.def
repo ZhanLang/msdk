@@ -1,0 +1,11 @@
+LIBRARY	RsTask
+
+EXPORTS
+	 
+	DllCanUnloadNow     = RSDllCanUnloadNow		PRIVATE
+	DllGetClassObject   = RSDllGetClassObject	PRIVATE
+	DllRegisterServer   = RSDllRegisterServer	PRIVATE
+	DllUnregisterServer = RSDllUnregisterServer	PRIVATE
+
+
+

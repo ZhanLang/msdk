@@ -27,3 +27,10 @@ msdk是一个在windows上的代码库，目前约有30W余行的代码量，可
 * Lua脚本组件
 * P2P下载组件
 * 轻量Dui组件
+
+# 使用方法
+* 将msdk跟目录添加到环境变量中
+code_dir = %msdkpath%
+
+
+* 在vs中 配置属性->C / C++ ->常规->附加包含目录 中添加$(code_dir)\msdk\include
